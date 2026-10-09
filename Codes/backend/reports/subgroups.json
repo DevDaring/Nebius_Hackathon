@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-10-05T17:14:47",
+ "generated_by": "nemotwins.eval.experiments",
+ "title": "Subgroup audit (Experiment 6), 2 pricks/day",
+ "overall": {
+  "rmse60": 30.556712866724343,
+  "coverage90_60": 0.898932384341637,
+  "ece_high": 0.03571842241713329
+ },
+ "flag_rule": "coverage of the 90% band below 82% at 60 min, or ECE more than twice overall + 0.02",
+ "rows": [
+  {
+   "dimension": "Sex",
+   "group": "F",
+   "n_patients": 29,
+   "n_people": 29,
+   "n_forecast_windows": 8248,
+   "rmse60": 29.007683010507847,
+   "coverage90_60": 0.9269742428530994,
+   "auroc_high": 0.8590181714392443,
+   "ece_high": 0.04990918084422638,
+   "flagged": false
+  },
+  {
+   "dimension": "Sex",
+   "group": "M",
+   "n_patients": 16,
+   "n_people": 16,
+   "n_forecast_windows": 5003,
+   "rmse60": 33.01375340216556,
+   "coverage90_60": 0.851461427886919,
+   "auroc_high": 0.7540205665858293,
+   "ece_high": 0.05224446017365916,
+   "flagged": false
+  },
+  {
+   "dimension": "Age",
+   "group": "40-54",
+   "n_patients": 19,
+   "n_people": 19,
+   "n_forecast_windows": 5499,
+   "rmse60": 30.873257876414947,
+   "coverage90_60": 0.9148211243611585,
+   "auroc_high": 0.8518943263266312,
+   "ece_high": 0.03856970556594178,
+   "flagged": false
+  },
+  {
+   "dimension": "Age",
+   "group": "55+",
+   "n_patients": 14,
+   "n_people": 14,
+   "n_forecast_windows": 3961,
+   "rmse60": 31.944888283637468,
+   "coverage90_60": 0.941318814277072,
+   "auroc_high": 0.8764452506535101,
+   "ece_high": 0.05390644389058563,
+   "flagged": false
+  },
+  {
+   "dimension": "Age",
+   "group": "<40",
+   "n_patients": 12,
+   "n_people": 12,
+   "n_forecast_windows": 3791,
+   "rmse60": 28.581922104165635,
+   "coverage90_60": 0.8326127239036443,
+   "auroc_high": 0.590399074265208,
+   "ece_high": 0.06143160334496481,
+   "flagged": false
+  },
+  {
+   "dimension": "BMI (Asian cut-offs)",
+   "group": "23-24.9",
+   "n_patients": 4,
+   "n_people": 4,
+   "n_forecast_windows": 1237,
+   "rmse60": 28.860512324577076,
+   "coverage90_60": 0.9435483870967742,
+   "auroc_high": 0.7991446578631453,
+   "ece_high": 0.04144075328519243,
+   "flagged": false
+  },
+  {
+   "dimension": "BMI (Asian cut-offs)",
+   "group": "<23",
+   "n_patients": 5,
+   "n_people": 5,
+   "n_forecast_windows": 1517,
+   "rmse60": 19.09781902602534,
+   "coverage90_60": 0.925686591276252,
+   "auroc_high": 0.5959792150136212,
+   "ece_high": 0.035279299582883054,
+   "flagged": false
+  },
+  {
+   "dimension": "BMI (Asian cut-offs)",
+   "group": ">=25",
+   "n_patients": 36,
+   "n_people": 36,
+   "n_forecast_windows": 10497,
+   "rmse60": 31.9842035430335,
+   "coverage90_60": 0.8903440621531632,
+   "auroc_high": 0.8085229762326631,
+   "ece_high": 0.043811107998184246,
+   "flagged": false
+  },
+  {
+   "dimension": "HbA1c",
+   "group": "5.7-6.4 (prediabetes)",
+   "n_patients": 16,
+   "n_people": 16,
+   "n_forecast_windows": 4522,
+   "rmse60": 27.30532176097974,
+   "coverage90_60": 0.9234187140616832,
+   "auroc_high": 0.7733950148875441,
+   "ece_high": 0.014962119515107923,
+   "flagged": false
+  },
+  {
+   "dimension": "HbA1c",
+   "group": "<5.7 (normal)",
+   "n_patients": 15,
+   "n_people": 15,
+   "n_forecast_windows": 4677,
+   "rmse60": 25.935373896158747,
+   "coverage90_60": 0.861612821165098,
+   "auroc_high": 0.5434893146647015,
+   "ece_high": 0.06406127126958731,
+   "flagged": false
+  },
+  {
+   "dimension": "HbA1c",
+   "group": ">=6.5 (diabetes)",
+   "n_patients": 14,
+   "n_people": 14,
+   "n_forecast_windows": 4052,
+   "rmse60": 37.88166795936053,
+   "coverage90_60": 0.9141544645420614,
+   "auroc_high": 0.8272973991181558,
+   "ece_high": 0.041949132677834025,
+   "flagged": false
+  }
+ ]
+}

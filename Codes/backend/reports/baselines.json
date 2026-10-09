@@ -1,0 +1,611 @@
+{
+ "generated_at": "2026-10-05T17:07:31",
+ "generated_by": "nemotwins.eval.experiments",
+ "title": "Baselines (Experiment 3)",
+ "rows": [
+  {
+   "level": "full",
+   "label": "Full CGM",
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "methods": {
+    "persistence": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 20.76246731841953,
+      "60": 30.679665627584047,
+      "90": 36.07908340344235,
+      "120": 39.46098151706553
+     },
+     "mard_60": 13.288621957833227,
+     "abstain_rate": 0.017508112595275828
+    },
+    "population_time_of_day": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 40.74910344571656,
+      "60": 41.4480909455856,
+      "90": 41.450183377844546,
+      "120": 41.089001899039246
+     },
+     "mard_60": 20.912137567799412,
+     "abstain_rate": 0.017508112595275828
+    },
+    "personal_average": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 32.59906156832961,
+      "60": 33.251427568913876,
+      "90": 33.16091437052858,
+      "120": 32.825271920883175
+     },
+     "mard_60": 15.921109784536547,
+     "abstain_rate": 0.017508112595275828
+    },
+    "lightgbm_sparse_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 22.852982509845784,
+      "60": 28.741936019446193,
+      "90": 31.115125281818976,
+      "120": 31.423871765516115
+     },
+     "mard_60": 14.261562124724009,
+     "auroc_high": 0.8499771433477802,
+     "auprc_high": 0.7723238597671032,
+     "brier_high": 0.11719371010878496,
+     "ece_high": 0.03733191028231158,
+     "prevalence_high": 0.2777033663719975,
+     "abstain_rate": 0.017508112595275828
+    },
+    "mechanistic_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 23.266295319703982,
+      "60": 28.793606202075875,
+      "90": 32.17550088569764,
+      "120": 34.34322239773112
+     },
+     "mard_60": 13.26286164769956,
+     "auroc_high": 0.8125153089881497,
+     "auprc_high": 0.7157615745783944,
+     "brier_high": 0.14022622257939696,
+     "ece_high": 0.11654076256808645,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.5987342677655567,
+     "auprc_low": 0.14865423978190934,
+     "ece_low": 0.004699229097836116,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.017508112595275828
+    },
+    "full_hybrid": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 21.279324401346244,
+      "60": 27.25155577016382,
+      "90": 30.271922781254673,
+      "120": 31.523167440498415
+     },
+     "mard_60": 13.399335240669735,
+     "coverage90": {
+      "30": 0.9034403262989892,
+      "60": 0.9006227758007117,
+      "90": 0.8966256025709695,
+      "120": 0.8974910394265233
+     },
+     "width90": {
+      "30": 72.13238940611839,
+      "60": 93.63274626205535,
+      "90": 102.80151108877901,
+      "120": 108.50590522325271
+     },
+     "auroc_high": 0.847574312938972,
+     "auprc_high": 0.7668612698917983,
+     "brier_high": 0.11546287645493923,
+     "ece_high": 0.03581424634999157,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.3434141387428086,
+     "auprc_low": 0.012713406782102133,
+     "ece_low": 0.0010699200143288283,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.017508112595275828
+    }
+   },
+   "paired_vs_full_hybrid_60min": {
+    "persistence": {
+     "rmse60_full_hybrid": 27.25155577016382,
+     "rmse60_baseline": 30.679665627584047,
+     "difference": -3.4281098574202282,
+     "difference_ci95": [
+      -4.905109082788003,
+      -1.510896266632342
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "population_time_of_day": {
+     "rmse60_full_hybrid": 27.25155577016382,
+     "rmse60_baseline": 41.4480909455856,
+     "difference": -14.19653517542178,
+     "difference_ci95": [
+      -19.495402576250896,
+      -8.33719985889846
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "personal_average": {
+     "rmse60_full_hybrid": 27.25155577016382,
+     "rmse60_baseline": 33.251427568913876,
+     "difference": -5.999871798750057,
+     "difference_ci95": [
+      -8.461706745211316,
+      -3.639927888544426
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "lightgbm_sparse_only": {
+     "rmse60_full_hybrid": 27.25155577016382,
+     "rmse60_baseline": 28.741936019446193,
+     "difference": -1.4903802492823743,
+     "difference_ci95": [
+      -2.7987585922676974,
+      -0.28290803561014133
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "mechanistic_only": {
+     "rmse60_full_hybrid": 27.25155577016382,
+     "rmse60_baseline": 28.793606202075875,
+     "difference": -1.542050431912056,
+     "difference_ci95": [
+      -2.213185666873476,
+      -0.7680040931608343
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    }
+   }
+  },
+  {
+   "level": "2",
+   "label": "2 pricks/day",
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "methods": {
+    "persistence": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 37.70524725930388,
+      "60": 38.86466172613639,
+      "90": 39.17615473102859,
+      "120": 39.03895304023091
+     },
+     "mard_60": 19.265245954511386,
+     "abstain_rate": 0.008376726284808693
+    },
+    "population_time_of_day": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 40.74910344571656,
+      "60": 41.4480909455856,
+      "90": 41.450183377844546,
+      "120": 41.089001899039246
+     },
+     "mard_60": 20.912137567799412,
+     "abstain_rate": 0.008376726284808693
+    },
+    "personal_average": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 32.59906156832961,
+      "60": 33.251427568913876,
+      "90": 33.16091437052858,
+      "120": 32.825271920883175
+     },
+     "mard_60": 15.921109784536547,
+     "abstain_rate": 0.008376726284808693
+    },
+    "lightgbm_sparse_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 29.632284435208366,
+      "60": 30.951741849222568,
+      "90": 31.890063118140326,
+      "120": 31.78384393967851
+     },
+     "mard_60": 15.361196954535512,
+     "auroc_high": 0.8054863716714256,
+     "auprc_high": 0.6637538669105701,
+     "brier_high": 0.14415658492573255,
+     "ece_high": 0.044778589572883776,
+     "prevalence_high": 0.2777033663719975,
+     "abstain_rate": 0.008376726284808693
+    },
+    "mechanistic_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 31.94414318298768,
+      "60": 33.66444975024231,
+      "90": 35.086947543914896,
+      "120": 36.13357046365548
+     },
+     "mard_60": 16.316101883416284,
+     "auroc_high": 0.7897473008281264,
+     "auprc_high": 0.6392768166611968,
+     "brier_high": 0.16062932206248573,
+     "ece_high": 0.12543560436943776,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.49157027534390885,
+     "auprc_low": 0.03469751514922155,
+     "ece_low": 0.020957823615203743,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.008376726284808693
+    },
+    "full_hybrid": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 29.37256937505062,
+      "60": 30.556712866724343,
+      "90": 31.662901153181693,
+      "120": 32.18832667824254
+     },
+     "mard_60": 15.489602601784325,
+     "coverage90": {
+      "30": 0.8935094874977833,
+      "60": 0.898932384341637,
+      "90": 0.8922513836814855,
+      "120": 0.8956093189964157
+     },
+     "width90": {
+      "30": 107.72222045303455,
+      "60": 114.42430186821935,
+      "90": 115.32881485936089,
+      "120": 116.35616599938575
+     },
+     "auroc_high": 0.8144352876499742,
+     "auprc_high": 0.6737127551498279,
+     "brier_high": 0.13832921288164202,
+     "ece_high": 0.03571842241713329,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.2990202985385225,
+     "auprc_low": 0.0055300437836546335,
+     "ece_low": 0.00030363003434433016,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.008376726284808693
+    }
+   },
+   "paired_vs_full_hybrid_60min": {
+    "persistence": {
+     "rmse60_full_hybrid": 30.556712866724343,
+     "rmse60_baseline": 38.86466172613639,
+     "difference": -8.307948859412047,
+     "difference_ci95": [
+      -10.831141983896357,
+      -5.017486612642497
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "population_time_of_day": {
+     "rmse60_full_hybrid": 30.556712866724343,
+     "rmse60_baseline": 41.4480909455856,
+     "difference": -10.891378078861255,
+     "difference_ci95": [
+      -15.952685356922936,
+      -5.123549688453804
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "personal_average": {
+     "rmse60_full_hybrid": 30.556712866724343,
+     "rmse60_baseline": 33.251427568913876,
+     "difference": -2.6947147021895326,
+     "difference_ci95": [
+      -4.349049674316428,
+      -1.0972899687480575
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "lightgbm_sparse_only": {
+     "rmse60_full_hybrid": 30.556712866724343,
+     "rmse60_baseline": 30.951741849222568,
+     "difference": -0.39502898249822493,
+     "difference_ci95": [
+      -1.649931392823241,
+      0.6722347271373624
+     ],
+     "ci_excludes_zero": false,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "mechanistic_only": {
+     "rmse60_full_hybrid": 30.556712866724343,
+     "rmse60_baseline": 33.66444975024231,
+     "difference": -3.107736883517969,
+     "difference_ci95": [
+      -4.1918910522444435,
+      -1.8717455243998455
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    }
+   }
+  },
+  {
+   "level": "0",
+   "label": "No glucose data",
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "methods": {
+    "persistence": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 38.8995502869528,
+      "60": 39.34262012202098,
+      "90": 39.21755966169185,
+      "120": 38.906271397443255
+     },
+     "mard_60": 19.990106914839807,
+     "abstain_rate": 0.01275375443362765
+    },
+    "population_time_of_day": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 40.74910344571656,
+      "60": 41.4480909455856,
+      "90": 41.450183377844546,
+      "120": 41.089001899039246
+     },
+     "mard_60": 20.912137567799412,
+     "abstain_rate": 0.01275375443362765
+    },
+    "personal_average": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 32.59906156832961,
+      "60": 33.251427568913876,
+      "90": 33.16091437052858,
+      "120": 32.825271920883175
+     },
+     "mard_60": 15.921109784536547,
+     "abstain_rate": 0.01275375443362765
+    },
+    "lightgbm_sparse_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 30.58382764246445,
+      "60": 31.525389465012648,
+      "90": 32.22836119442219,
+      "120": 31.980365021670085
+     },
+     "mard_60": 15.679522071705144,
+     "auroc_high": 0.8003267706253461,
+     "auprc_high": 0.6517843126429737,
+     "brier_high": 0.1476125919859152,
+     "ece_high": 0.05279715673097944,
+     "prevalence_high": 0.2777033663719975,
+     "abstain_rate": 0.01275375443362765
+    },
+    "mechanistic_only": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 33.75610003435955,
+      "60": 35.05068228032909,
+      "90": 36.20825483558169,
+      "120": 37.05010981175195
+     },
+     "mard_60": 16.758086589970496,
+     "auroc_high": 0.7838140716681262,
+     "auprc_high": 0.6209439080232716,
+     "brier_high": 0.16567407010546575,
+     "ece_high": 0.13229990772985686,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.5030434801458443,
+     "auprc_low": 0.02103206434947378,
+     "ece_low": 0.028807929279399944,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.01275375443362765
+    },
+    "full_hybrid": {
+     "n_patients": 45,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 13251,
+     "n_forecasts": 13251,
+     "rmse": {
+      "30": 30.46043766859621,
+      "60": 31.10664705156171,
+      "90": 31.992879226572466,
+      "120": 32.481212283192484
+     },
+     "mard_60": 15.727735038931423,
+     "coverage90": {
+      "30": 0.8898740911509133,
+      "60": 0.8958185053380783,
+      "90": 0.8923406534547402,
+      "120": 0.8897849462365591
+     },
+     "width90": {
+      "30": 112.1925055474185,
+      "60": 117.0988382440836,
+      "90": 117.87416334023452,
+      "120": 117.98187990848159
+     },
+     "auroc_high": 0.810702836093158,
+     "auprc_high": 0.6633202221463377,
+     "brier_high": 0.14073073436243194,
+     "ece_high": 0.03346601646584242,
+     "prevalence_high": 0.2777033663719975,
+     "auroc_low": 0.28154521649028647,
+     "auprc_low": 0.0053729483164898185,
+     "ece_low": 0.00011554504147091235,
+     "prevalence_low": 0.007411376015715689,
+     "abstain_rate": 0.01275375443362765
+    }
+   },
+   "paired_vs_full_hybrid_60min": {
+    "persistence": {
+     "rmse60_full_hybrid": 31.10664705156171,
+     "rmse60_baseline": 39.34262012202098,
+     "difference": -8.235973070459274,
+     "difference_ci95": [
+      -12.998673259320302,
+      -3.1603821857512315
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "population_time_of_day": {
+     "rmse60_full_hybrid": 31.10664705156171,
+     "rmse60_baseline": 41.4480909455856,
+     "difference": -10.34144389402389,
+     "difference_ci95": [
+      -15.521913429888825,
+      -4.614825097660296
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "personal_average": {
+     "rmse60_full_hybrid": 31.10664705156171,
+     "rmse60_baseline": 33.251427568913876,
+     "difference": -2.1447805173521672,
+     "difference_ci95": [
+      -3.4834453802001475,
+      -0.7725647559173769
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "lightgbm_sparse_only": {
+     "rmse60_full_hybrid": 31.10664705156171,
+     "rmse60_baseline": 31.525389465012648,
+     "difference": -0.4187424134509392,
+     "difference_ci95": [
+      -1.7444249302324237,
+      0.7387586134257376
+     ],
+     "ci_excludes_zero": false,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    },
+    "mechanistic_only": {
+     "rmse60_full_hybrid": 31.10664705156171,
+     "rmse60_baseline": 35.05068228032909,
+     "difference": -3.944035228767383,
+     "difference_ci95": [
+      -5.114608664971597,
+      -2.515495314144618
+     ],
+     "ci_excludes_zero": true,
+     "n_people": 45,
+     "n_recordings": 45,
+     "n_forecast_windows": 11240
+    }
+   }
+  }
+ ],
+ "notes": "Same forecast origins and people for every method; nested person-wise CV (the sparse LightGBM baseline and the population time-of-day curve are fitted on each fold's training people only). paired_vs_full_hybrid_60min: RMSE(full_hybrid) - RMSE(baseline) at 60 min on the same windows; negative = hybrid better; 95% CI by bootstrap over people."
+}

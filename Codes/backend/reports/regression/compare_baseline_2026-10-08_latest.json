@@ -1,0 +1,8 @@
+{
+ "compared_to": "numerical_baseline_2026-10-08.json",
+ "generated_at": "2026-10-10T06:28:28+00:00",
+ "tolerance_abs": 1e-06,
+ "n_values": 120,
+ "n_diffs": 0,
+ "diffs": []
+}

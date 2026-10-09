@@ -1,0 +1,62 @@
+fdc_id,dataset,description,energy_kcal,carb_by_difference_g,fibre_total_dietary_g,protein_g,fat_g,release
+167747,SR Legacy,"Lemon juice, raw",22.0,6.9,0.3,0.35,0.24,FoodData_Central_sr_legacy_food_csv_2018-04
+168106,SR Legacy,Papad,371.0,59.87,18.6,25.56,3.25,FoodData_Central_sr_legacy_food_csv_2018-04
+169655,SR Legacy,"Sugars, granulated",387.0,99.98,0.0,0.0,0.0,FoodData_Central_sr_legacy_food_csv_2018-04
+169714,SR Legacy,"Rice flour, white, unenriched",366.0,80.13,2.4,5.95,1.42,FoodData_Central_sr_legacy_food_csv_2018-04
+171017,SR Legacy,"Oil, sunflower, linoleic (less than 60%)",884.0,0.0,0.0,0.0,100.0,FoodData_Central_sr_legacy_food_csv_2018-04
+171052,SR Legacy,"Chicken, broilers or fryers, meat only, raw",119.0,0.0,0.0,21.39,3.08,FoodData_Central_sr_legacy_food_csv_2018-04
+171284,SR Legacy,"Yogurt, plain, whole milk",61.0,4.66,0.0,3.47,3.25,FoodData_Central_sr_legacy_food_csv_2018-04
+171890,SR Legacy,"Beverages, coffee, brewed, prepared with tap water",1.0,0.0,0.0,0.12,0.02,FoodData_Central_sr_legacy_food_csv_2018-04
+172337,SR Legacy,"Oil, mustard",884.0,0.0,0.0,0.0,100.0,FoodData_Central_sr_legacy_food_csv_2018-04
+172688,SR Legacy,"Bread, whole-wheat, commercially prepared",252.0,42.71,6.0,12.45,3.5,FoodData_Central_sr_legacy_food_csv_2018-04
+173424,SR Legacy,"Egg, whole, cooked, hard-boiled",155.0,1.12,0.0,12.58,10.61,FoodData_Central_sr_legacy_food_csv_2018-04
+174288,SR Legacy,Chickpea flour (besan),387.0,57.82,10.8,22.39,6.69,FoodData_Central_sr_legacy_food_csv_2018-04
+174924,SR Legacy,"Bread, white, commercially prepared (includes soft bread crumbs)",266.0,49.42,2.7,8.85,3.33,FoodData_Central_sr_legacy_food_csv_2018-04
+2707613,FNDDS 2021-2023,"Bread, naan",311.0,50.23,5.2,11.09,7.28,FoodData_Central_survey_food_csv_2024-10-31
+2707714,FNDDS 2021-2023,"Bread, puri",409.0,39.23,3.5,6.84,24.94,FoodData_Central_survey_food_csv_2024-10-31
+2708408,FNDDS 2021-2023,"Rice, white, cooked, no added fat",129.0,27.99,0.4,2.67,0.28,FoodData_Central_survey_food_csv_2024-10-31
+2708414,FNDDS 2021-2023,"Rice, brown, cooked, no added fat",123.0,25.76,1.0,2.43,1.11,FoodData_Central_survey_food_csv_2024-10-31
+2708730,FNDDS 2021-2023,Samosa,310.0,33.16,1.8,5.14,17.47,FoodData_Central_survey_food_csv_2024-10-31
+2710168,FNDDS 2021-2023,"Ghee, clarified butter",876.0,0.0,0.0,0.28,99.48,FoodData_Central_survey_food_csv_2024-10-31
+2710488,FNDDS 2021-2023,"Tea, hot, leaf, black",1.0,0.3,0.0,0.0,0.0,FoodData_Central_survey_food_csv_2024-10-31
+2706897,FNDDS 2021-2023,"Cheeseburger, from fast food, 1 medium patty",296.0,18.71,0.6,17.87,16.15,FoodData_Central_survey_food_csv_2024-10-31
+2706920,FNDDS 2021-2023,"Hamburger, NFS",288.0,20.68,0.7,17.51,14.38,FoodData_Central_survey_food_csv_2024-10-31
+2709461,FNDDS 2021-2023,"Potato, french fries, fast food",312.0,41.44,3.8,3.43,14.73,FoodData_Central_survey_food_csv_2024-10-31
+2708640,FNDDS 2021-2023,"Pizza with pepperoni, from restaurant or fast food,  medium crust",282.0,31.98,2.3,11.74,11.91,FoodData_Central_survey_food_csv_2024-10-31
+2708616,FNDDS 2021-2023,"Pizza, cheese, from restaurant or fast food, medium crust",266.0,33.33,2.3,11.39,9.69,FoodData_Central_survey_food_csv_2024-10-31
+2708299,FNDDS 2021-2023,"Pancakes, plain, fast food / restaurant",307.0,34.14,2.1,7.16,15.48,FoodData_Central_survey_food_csv_2024-10-31
+2710272,FNDDS 2021-2023,"Syrup, NFS",265.0,69.6,0.0,0.0,0.1,FoodData_Central_survey_food_csv_2024-10-31
+2707201,FNDDS 2021-2023,"Egg omelet or scrambled egg, made with butter",182.0,0.9,0.0,11.61,14.64,FoodData_Central_survey_food_csv_2024-10-31
+2705889,FNDDS 2021-2023,"Pork bacon, smoked or cured, cooked",468.0,1.7,0.0,33.92,35.09,FoodData_Central_survey_food_csv_2024-10-31
+2708812,FNDDS 2021-2023,"Macaroni or noodles with cheese, from restaurant",151.0,18.8,1.1,5.42,6.06,FoodData_Central_survey_food_csv_2024-10-31
+2705949,FNDDS 2021-2023,"Chicken, NS as to part, fried, coated, skin / coating eaten",251.0,7.14,0.2,21.75,15.02,FoodData_Central_survey_food_csv_2024-10-31
+2709944,FNDDS 2021-2023,"Okra, fresh, cooked, no added fat",35.0,7.99,3.4,2.07,0.2,FoodData_Central_survey_food_csv_2024-10-31
+2705823,FNDDS 2021-2023,"Steak, NS as to type of meat, NS as to fat eaten",230.0,0.0,0.0,26.95,12.99,FoodData_Central_survey_food_csv_2024-10-31
+2709496,FNDDS 2021-2023,"Potato, mashed, from fresh, made with milk",114.0,17.6,1.2,2.15,4.07,FoodData_Central_survey_food_csv_2024-10-31
+2709909,FNDDS 2021-2023,"Corn, cooked, from restaurant",119.0,17.73,1.9,3.11,5.43,FoodData_Central_survey_food_csv_2024-10-31
+2709815,FNDDS 2021-2023,Coleslaw,117.0,10.45,1.9,0.94,7.98,FoodData_Central_survey_food_csv_2024-10-31
+2709591,FNDDS 2021-2023,"Caesar salad, with romaine, no dressing",77.0,7.49,1.8,4.0,3.41,FoodData_Central_survey_food_csv_2024-10-31
+2705968,FNDDS 2021-2023,"Chicken breast, grilled without sauce, skin not eaten",176.0,0.0,0.0,29.62,5.45,FoodData_Central_survey_food_csv_2024-10-31
+2707056,FNDDS 2021-2023,"Hot dog sandwich, NFS, on white bun",296.0,23.73,0.8,10.85,17.37,FoodData_Central_survey_food_csv_2024-10-31
+2710541,FNDDS 2021-2023,"Soft drink, cola",42.0,10.36,0.0,0.0,0.25,FoodData_Central_survey_food_csv_2024-10-31
+2710542,FNDDS 2021-2023,"Soft drink, cola, diet",2.0,0.29,0.0,0.11,0.03,FoodData_Central_survey_food_csv_2024-10-31
+2709186,FNDDS 2021-2023,"Orange juice, 100%, NFS",47.0,10.17,0.3,0.77,0.34,FoodData_Central_survey_food_csv_2024-10-31
+2707995,FNDDS 2021-2023,"Pie, apple",296.0,37.55,1.8,2.7,15.28,FoodData_Central_survey_food_csv_2024-10-31
+2705629,FNDDS 2021-2023,"Ice cream, NFS",221.0,26.36,0.8,3.57,11.3,FoodData_Central_survey_food_csv_2024-10-31
+2707909,FNDDS 2021-2023,"Cookie, chocolate chip",492.0,65.36,2.0,5.1,24.72,FoodData_Central_survey_food_csv_2024-10-31
+2708062,FNDDS 2021-2023,"Doughnut, NFS",426.0,49.52,1.8,5.52,22.86,FoodData_Central_survey_food_csv_2024-10-31
+2708325,FNDDS 2021-2023,"Waffle, plain",373.0,41.5,2.5,8.7,18.82,FoodData_Central_survey_food_csv_2024-10-31
+2710078,FNDDS 2021-2023,"Pickles, dill",14.0,1.99,1.0,0.48,0.43,FoodData_Central_survey_food_csv_2024-10-31
+2709719,FNDDS 2021-2023,"Tomatoes, raw",20.0,4.04,1.2,0.82,0.31,FoodData_Central_survey_food_csv_2024-10-31
+2709660,FNDDS 2021-2023,"Carrots, raw",44.0,9.68,2.9,0.87,0.24,FoodData_Central_survey_food_csv_2024-10-31
+2707732,FNDDS 2021-2023,"Bagel, wheat",250.0,48.89,4.1,10.2,1.53,FoodData_Central_survey_food_csv_2024-10-31
+168867,SR Legacy,"Cornmeal, degermed, enriched, yellow",370.0,79.4,3.9,7.11,1.75,FoodData_Central_sr_legacy_food_csv_2018-04
+2709789,FNDDS 2021-2023,"Lettuce, raw",20.0,3.69,1.3,0.92,0.1,FoodData_Central_survey_food_csv_2024-10-31
+2710155,FNDDS 2021-2023,"Butter, stick",743.0,0.06,0.0,0.85,82.2,FoodData_Central_survey_food_csv_2024-10-31
+2709273,FNDDS 2021-2023,"Blackberries, raw",43.0,9.61,5.3,1.39,0.49,FoodData_Central_survey_food_csv_2024-10-31
+2709275,FNDDS 2021-2023,"Blueberries, raw",64.0,14.57,2.4,0.7,0.31,FoodData_Central_survey_food_csv_2024-10-31
+2709281,FNDDS 2021-2023,"Raspberries, raw",57.0,12.9,6.5,1.01,0.19,FoodData_Central_survey_food_csv_2024-10-31
+2709888,FNDDS 2021-2023,"Cabbage, Chinese, cooked, fat added",37.0,2.2,1.0,1.52,2.85,FoodData_Central_survey_food_csv_2024-10-31
+2709977,FNDDS 2021-2023,"Peppers, red, cooked",55.0,6.71,1.2,0.92,2.78,FoodData_Central_survey_food_csv_2024-10-31
+2710012,FNDDS 2021-2023,"Classic mixed vegetables, cooked, from restaurant",100.0,12.37,3.4,2.84,4.74,FoodData_Central_survey_food_csv_2024-10-31
+2710517,FNDDS 2021-2023,"Tea, iced, brewed, black, unsweetened",1.0,0.3,0.0,0.0,0.0,FoodData_Central_survey_food_csv_2024-10-31

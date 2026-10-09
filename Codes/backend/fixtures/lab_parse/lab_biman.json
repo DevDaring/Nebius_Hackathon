@@ -1,0 +1,29 @@
+{
+ "values": {
+  "hba1c": 7.2,
+  "fasting_glucose": 148,
+  "total_cholesterol": 196,
+  "ldl": 118,
+  "hdl": 41,
+  "triglycerides": 182,
+  "creatinine": 1.0,
+  "egfr": 84,
+  "bmi": null
+ },
+ "units": {
+  "hba1c": "%",
+  "fasting_glucose": "mg/dL",
+  "total_cholesterol": "mg/dL",
+  "ldl": "mg/dL",
+  "hdl": "mg/dL",
+  "triglycerides": "mg/dL",
+  "creatinine": "mg/dL",
+  "egfr": "mL/min/1.73m²",
+  "bmi": null
+ },
+ "medications": [
+  "Metformin 500 mg BD"
+ ],
+ "diagnoses": [],
+ "collection_date": "2026-09-28"
+}

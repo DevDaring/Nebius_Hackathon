@@ -1,0 +1,47 @@
+{
+ "dishes": [
+  {
+   "name": "pancakes",
+   "portion": 3,
+   "unit": "piece",
+   "grams": 200,
+   "confidence": 0.95
+  },
+  {
+   "name": "scrambled eggs",
+   "portion": 1,
+   "unit": "serving",
+   "grams": 100,
+   "confidence": 0.9
+  },
+  {
+   "name": "bacon",
+   "portion": 4,
+   "unit": "piece",
+   "grams": 50,
+   "confidence": 0.85
+  },
+  {
+   "name": "butter",
+   "portion": 2,
+   "unit": "piece",
+   "grams": 20,
+   "confidence": 0.75
+  },
+  {
+   "name": "mixed berries",
+   "portion": 1,
+   "unit": "bowl",
+   "grams": 100,
+   "confidence": 0.9
+  },
+  {
+   "name": "milk",
+   "portion": 1,
+   "unit": "glass",
+   "grams": 250,
+   "confidence": 0.85
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

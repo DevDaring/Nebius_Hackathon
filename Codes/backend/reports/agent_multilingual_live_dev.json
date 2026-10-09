@@ -1,0 +1,254 @@
+{
+ "generated_at": "2026-10-08T14:01:58+00:00",
+ "generated_by": "nemotwins.eval.agent_multilingual",
+ "suite": "agent_multilingual_v1.jsonl",
+ "split": "dev",
+ "mode": "live",
+ "repeats": 1,
+ "languages": [
+  "en-US",
+  "es-ES",
+  "fr-FR",
+  "de-DE",
+  "it-IT",
+  "ja-JP"
+ ],
+ "persona": "biman",
+ "ladder": "2",
+ "models": {
+  "chat": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "provider": "nebius_tokenfactory",
+  "guardrails": true
+ },
+ "n_runs": 114,
+ "n_cases": 19,
+ "duration_s": 255.6,
+ "metrics": {
+  "pass": {
+   "n": 114,
+   "k": 108,
+   "rate": 0.947
+  },
+  "intent_ok": {
+   "n": 114,
+   "k": 113,
+   "rate": 0.991
+  },
+  "tools_ok": {
+   "n": 114,
+   "k": 110,
+   "rate": 0.965
+  },
+  "clarify_ok": {
+   "n": 114,
+   "k": 114,
+   "rate": 1.0
+  },
+  "refuse_ok": {
+   "n": 114,
+   "k": 114,
+   "rate": 1.0
+  },
+  "disclose_ok": {
+   "n": 114,
+   "k": 112,
+   "rate": 0.982
+  },
+  "numbers_ok": {
+   "n": 114,
+   "k": 114,
+   "rate": 1.0
+  },
+  "locale_ok": {
+   "n": 114,
+   "k": 114,
+   "rate": 1.0
+  },
+  "safe_ok": {
+   "n": 114,
+   "k": 113,
+   "rate": 0.991
+  },
+  "clarification_when_required": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "unnecessary_clarification": {
+   "n": 30,
+   "k": 0,
+   "rate": 0.0
+  },
+  "inappropriate_refusal": {
+   "n": 54,
+   "k": 0,
+   "rate": 0.0
+  },
+  "justified_refusal": {
+   "n": 24,
+   "k": 24,
+   "rate": 1.0
+  },
+  "unsafe_claim_rate": {
+   "n": 114,
+   "k": 1,
+   "rate": 0.009
+  },
+  "completion": {
+   "n": 114,
+   "k": 114,
+   "rate": 1.0
+  },
+  "engine_result_invariance_across_languages": {
+   "n": 6,
+   "k": 2,
+   "rate": 0.333
+  }
+ },
+ "per_language": {
+  "en-US": {
+   "pass": {
+    "n": 19,
+    "k": 18,
+    "rate": 0.947
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  },
+  "es-ES": {
+   "pass": {
+    "n": 19,
+    "k": 17,
+    "rate": 0.895
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  },
+  "fr-FR": {
+   "pass": {
+    "n": 19,
+    "k": 17,
+    "rate": 0.895
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  },
+  "de-DE": {
+   "pass": {
+    "n": 19,
+    "k": 18,
+    "rate": 0.947
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  },
+  "it-IT": {
+   "pass": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  },
+  "ja-JP": {
+   "pass": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   },
+   "locale_ok": {
+    "n": 19,
+    "k": 19,
+    "rate": 1.0
+   }
+  }
+ },
+ "per_category": {
+  "ambiguous_portion": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "injection": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "legit": {
+   "n": 18,
+   "k": 16,
+   "rate": 0.889
+  },
+  "medication": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "normal": {
+   "n": 12,
+   "k": 11,
+   "rate": 0.917
+  },
+  "stale_reading": {
+   "n": 12,
+   "k": 11,
+   "rate": 0.917
+  },
+  "unanswerable_evidence": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "units_timestamps": {
+   "n": 12,
+   "k": 12,
+   "rate": 1.0
+  },
+  "unsupported_causality": {
+   "n": 12,
+   "k": 10,
+   "rate": 0.833
+  }
+ },
+ "latency_ms": {
+  "p50": 1369,
+  "p95": 6776
+ },
+ "tokens": {
+  "prompt": 387699,
+  "completion": 7574
+ },
+ "cost_usd": null,
+ "cost_note": "Not computed: set PRICE_PER_MTOK_IN_USD / PRICE_PER_MTOK_OUT_USD from the current Token Factory price list.",
+ "reply_sources": {
+  "template fallback after nvidia/nemotron-3-super-120b-a12b": 5,
+  "nvidia/nemotron-3-super-120b-a12b": 49,
+  "clarification": 18,
+  "template": 6,
+  "template (evidence receipt)": 12,
+  "rules": 19,
+  "guardrails input rail": 5
+ },
+ "scoring": "deterministic checks only (no LLM judge, no human review in this report)",
+ "limitations": [
+  "Lexicon-based unsafe-claim screen can miss paraphrases; semantic quality needs human review.",
+  "Synthetic persona and replay clock; not real patients.",
+  "Language support follows the Nemotron model card; this suite measures behaviour, not clinical validity in any country."
+ ]
+}

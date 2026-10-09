@@ -1,0 +1,40 @@
+{
+ "dishes": [
+  {
+   "name": "fried chicken",
+   "portion": 3,
+   "unit": "piece",
+   "grams": 450,
+   "confidence": 0.95
+  },
+  {
+   "name": "macaroni and cheese",
+   "portion": 1,
+   "unit": "bowl",
+   "grams": 200,
+   "confidence": 0.9
+  },
+  {
+   "name": "fried okra",
+   "portion": 1,
+   "unit": "bowl",
+   "grams": 150,
+   "confidence": 0.85
+  },
+  {
+   "name": "mashed potatoes",
+   "portion": 1,
+   "unit": "bowl",
+   "grams": 150,
+   "confidence": 0.85
+  },
+  {
+   "name": "iced tea",
+   "portion": 1,
+   "unit": "glass",
+   "grams": 300,
+   "confidence": 0.75
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

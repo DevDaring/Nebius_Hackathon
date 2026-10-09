@@ -1,0 +1,54 @@
+{
+ "dishes": [
+  {
+   "name": "steamed rice",
+   "portion": 2,
+   "unit": "katori",
+   "grams": 300,
+   "confidence": 0.95
+  },
+  {
+   "name": "masoor dal",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.9
+  },
+  {
+   "name": "fish curry",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 180,
+   "confidence": 0.92
+  },
+  {
+   "name": "aloo bhaja",
+   "portion": 5,
+   "unit": "piece",
+   "grams": 100,
+   "confidence": 0.85
+  },
+  {
+   "name": "bhindi fry",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 120,
+   "confidence": 0.88
+  },
+  {
+   "name": "papads",
+   "portion": 4,
+   "unit": "piece",
+   "grams": 40,
+   "confidence": 0.8
+  },
+  {
+   "name": "gulab jamun",
+   "portion": 5,
+   "unit": "piece",
+   "grams": 100,
+   "confidence": 0.9
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

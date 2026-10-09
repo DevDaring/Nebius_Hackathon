@@ -1,0 +1,69 @@
+{
+ "bbox": [
+  [
+   -0.30943,
+   -0.00045,
+   -0.12388
+  ],
+  [
+   0.30698,
+   1.72122,
+   0.18606
+  ]
+ ],
+ "meshes": {
+  "_vertices": {
+   "body": {
+    "offset": 0,
+    "count": 13380
+   },
+   "male_casualsuit01": {
+    "offset": 412992,
+    "count": 8426
+   },
+   "shoes01": {
+    "offset": 614136,
+    "count": 1650
+   },
+   "short02": {
+    "offset": 652992,
+    "count": 1755
+   },
+   "low-poly": {
+    "offset": 694116,
+    "count": 96
+   }
+  },
+  "body": {
+   "vertices": "body",
+   "indexOffset": 160560,
+   "indexCount": 45948
+  },
+  "glass": {
+   "vertices": "body",
+   "indexOffset": 252456,
+   "indexCount": 80268
+  },
+  "male_casualsuit01": {
+   "vertices": "male_casualsuit01",
+   "indexOffset": 514104,
+   "indexCount": 50016
+  },
+  "shoes01": {
+   "vertices": "shoes01",
+   "indexOffset": 633936,
+   "indexCount": 9528
+  },
+  "short02": {
+   "vertices": "short02",
+   "indexOffset": 674052,
+   "indexCount": 10032
+  },
+  "low-poly": {
+   "vertices": "low-poly",
+   "indexOffset": 695268,
+   "indexCount": 516
+  }
+ },
+ "source": "MakeHuman (CC0 1.0): base mesh, macro targets, default rig; system assets male_casualsuit01, shoes01, short02, low-poly eyes"
+}

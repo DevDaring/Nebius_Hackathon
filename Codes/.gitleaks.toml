@@ -1,0 +1,43 @@
+# gitleaks configuration: default rules plus a few generic patterns for the provider keys
+# this project uses. Real keys live only in the untracked .env.
+title = "nemotwins gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "nemotwins-env-key-assignment"
+description = "KEY/TOKEN/SECRET assigned a non-empty value in env/shell style (e.g. a copied .env)"
+regex = '''(?im)^[ \t]*(?:export[ \t]+)?[a-z0-9_]*(?:api[_-]?key|token|secret|access[_-]?key|password)[a-z0-9_]*[ \t]*=[ \t]*["']?([A-Za-z0-9_\-]{16,})'''
+secretGroup = 1
+keywords = ["key", "token", "secret", "password"]
+
+[[rules]]
+id = "nemotwins-quoted-key-assignment"
+description = "Quoted API key/token/secret value in JSON, YAML or code"
+regex = '''(?i)["']?[a-z0-9_]*(?:api[_-]?key|token|secret)[a-z0-9_]*["']?[ \t]*[:=][ \t]*["']([A-Za-z0-9_\-]{20,})["']'''
+secretGroup = 1
+keywords = ["key", "token", "secret"]
+
+[[rules]]
+id = "duckdns-token"
+description = "DuckDNS token (UUID)"
+regex = '''(?i)duckdns[a-z_]*[ \t]*[:=][ \t]*["']?([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})'''
+secretGroup = 1
+keywords = ["duckdns"]
+
+[allowlist]
+description = "Known non-secrets"
+paths = [
+  '''(^|/)\.env\.example$''',
+  '''(^|/)package-lock\.json$''',
+  '''(^|/)backend/data/food/raw/''',
+  '''(^|/)backend/reports/''',
+  '''(^|/)frontend/dist/''',
+  # artefact manifest: "key" fields are artefact ids with short content hashes, not credentials
+  '''(^|/)backend/artifacts/manifest\.json$''',
+]
+regexes = [
+  '''dev-only-change-me-nemotwins''',
+  '''ci-only-not-a-secret''',
+]

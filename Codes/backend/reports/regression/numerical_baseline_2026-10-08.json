@@ -1,0 +1,242 @@
+{
+ "generated_at": "2026-10-08T11:24:55+00:00",
+ "inputs": {
+  "ladder": "2",
+  "meal": {
+   "carbs": 60.0,
+   "fat": 10.0,
+   "fibre": 4.0,
+   "name": "fixed test meal",
+   "protein": 15.0
+  },
+  "offset": 0,
+  "readings_assimilated": [
+   150.0
+  ]
+ },
+ "label": "baseline_2026-10-08",
+ "outputs": {
+  "biman": {
+   "assimilate_150": {
+    "band_after": {
+     "hi": 193.9,
+     "lo": 107.3
+    },
+    "estimate_after": 150.6,
+    "width_change": {
+     "h120": {
+      "after": 88.5,
+      "before": 92.2,
+      "horizon_min": 120,
+      "signed_pct": -4.0
+     },
+     "now": {
+      "after": 86.6,
+      "before": 76.1,
+      "signed_pct": 13.8
+     }
+    }
+   },
+   "forecast_meal": {
+    "p_high": 0.787,
+    "p_low": 0.007,
+    "peak": {
+     "t": "2026-10-08T20:15",
+     "value": 178.0
+    }
+   },
+   "state": {
+    "band": {
+     "hi": 192.1,
+     "lo": 116.0
+    },
+    "estimate": 154.1,
+    "forecast_peak": {
+     "t": "2026-10-08T21:00",
+     "value": 158.0
+    },
+    "freshness": {
+     "hours_since_reading": 12.5,
+     "label": "stale",
+     "score": 0.21
+    },
+    "nbp_time": "2026-10-09T11:00",
+    "now": "2026-10-08T19:30",
+    "p_high": 0.468
+   },
+   "what_if_half": {
+    "delta_p_high": {
+     "hi": -0.184,
+     "interval_kind": "simulation_variability",
+     "lo": -0.278,
+     "mean": -0.226,
+     "note": "Interval = simulation variability (paired bootstrap over the twin's particles), not a clinical confidence interval."
+    },
+    "delta_peak": -13.1,
+    "delta_peak_ci": {
+     "hi": -12.5,
+     "interval_kind": "simulation_variability",
+     "lo": -14.5
+    },
+    "too_small_to_call": false
+   },
+   "what_if_walk": {
+    "delta_peak": -4.1,
+    "delta_peak_ci": {
+     "hi": -3.5,
+     "interval_kind": "simulation_variability",
+     "lo": -5.2
+    },
+    "too_small_to_call": false
+   }
+  },
+  "lakshmi": {
+   "assimilate_150": {
+    "band_after": {
+     "hi": 193.6,
+     "lo": 106.4
+    },
+    "estimate_after": 150.0,
+    "width_change": {
+     "h120": {
+      "after": 112.3,
+      "before": 118.6,
+      "horizon_min": 120,
+      "signed_pct": -5.3
+     },
+     "now": {
+      "after": 87.2,
+      "before": 105.2,
+      "signed_pct": -17.1
+     }
+    }
+   },
+   "forecast_meal": {
+    "p_high": 0.399,
+    "p_low": 0.007,
+    "peak": {
+     "t": "2026-10-08T21:30",
+     "value": 173.2
+    }
+   },
+   "state": {
+    "band": {
+     "hi": 201.9,
+     "lo": 96.7
+    },
+    "estimate": 149.3,
+    "forecast_peak": {
+     "t": "2026-10-08T21:30",
+     "value": 152.6
+    },
+    "freshness": {
+     "hours_since_reading": 12.5,
+     "label": "stale",
+     "score": 0.21
+    },
+    "nbp_time": "2026-10-09T08:30",
+    "now": "2026-10-08T19:30",
+    "p_high": 0.308
+   },
+   "what_if_half": {
+    "delta_p_high": {
+     "hi": -0.109,
+     "interval_kind": "simulation_variability",
+     "lo": -0.167,
+     "mean": -0.138,
+     "note": "Interval = simulation variability (paired bootstrap over the twin's particles), not a clinical confidence interval."
+    },
+    "delta_peak": -10.9,
+    "delta_peak_ci": {
+     "hi": -10.0,
+     "interval_kind": "simulation_variability",
+     "lo": -11.9
+    },
+    "too_small_to_call": false
+   },
+   "what_if_walk": {
+    "delta_peak": -1.7,
+    "delta_peak_ci": {
+     "hi": -1.0,
+     "interval_kind": "simulation_variability",
+     "lo": -2.1
+    },
+    "too_small_to_call": true
+   }
+  },
+  "ramesh": {
+   "assimilate_150": {
+    "band_after": {
+     "hi": 199.1,
+     "lo": 110.9
+    },
+    "estimate_after": 155.0,
+    "width_change": {
+     "h120": {
+      "after": 171.0,
+      "before": 195.5,
+      "horizon_min": 120,
+      "signed_pct": -12.5
+     },
+     "now": {
+      "after": 88.2,
+      "before": 157.5,
+      "signed_pct": -44.0
+     }
+    }
+   },
+   "forecast_meal": {
+    "p_high": 0.731,
+    "p_low": 0.007,
+    "peak": {
+     "t": "2026-10-08T21:30",
+     "value": 218.3
+    }
+   },
+   "state": {
+    "band": {
+     "hi": 254.9,
+     "lo": 97.4
+    },
+    "estimate": 176.1,
+    "forecast_peak": {
+     "t": "2026-10-08T21:30",
+     "value": 188.3
+    },
+    "freshness": {
+     "hours_since_reading": 12.5,
+     "label": "stale",
+     "score": 0.21
+    },
+    "nbp_time": "2026-10-09T08:30",
+    "now": "2026-10-08T19:30",
+    "p_high": 0.607
+   },
+   "what_if_half": {
+    "delta_p_high": {
+     "hi": -0.093,
+     "interval_kind": "simulation_variability",
+     "lo": -0.169,
+     "mean": -0.128,
+     "note": "Interval = simulation variability (paired bootstrap over the twin's particles), not a clinical confidence interval."
+    },
+    "delta_peak": -19.0,
+    "delta_peak_ci": {
+     "hi": -17.6,
+     "interval_kind": "simulation_variability",
+     "lo": -21.4
+    },
+    "too_small_to_call": false
+   },
+   "what_if_walk": {
+    "delta_peak": -5.4,
+    "delta_peak_ci": {
+     "hi": -4.6,
+     "interval_kind": "simulation_variability",
+     "lo": -6.0
+    },
+    "too_small_to_call": false
+   }
+  }
+ }
+}

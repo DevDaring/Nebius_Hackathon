@@ -1,0 +1,40 @@
+{
+ "dishes": [
+  {
+   "name": "cheeseburger",
+   "portion": 1,
+   "unit": "piece",
+   "grams": 250,
+   "confidence": 0.95
+  },
+  {
+   "name": "french fries",
+   "portion": 1,
+   "unit": "serving",
+   "grams": 150,
+   "confidence": 0.9
+  },
+  {
+   "name": "dill pickle",
+   "portion": 1,
+   "unit": "piece",
+   "grams": 50,
+   "confidence": 0.85
+  },
+  {
+   "name": "tomato slices",
+   "portion": 2,
+   "unit": "piece",
+   "grams": 80,
+   "confidence": 0.8
+  },
+  {
+   "name": "lettuce",
+   "portion": 1,
+   "unit": "serving",
+   "grams": 30,
+   "confidence": 0.7
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

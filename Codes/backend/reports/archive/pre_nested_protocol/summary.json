@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-05T13:49:06",
+ "generated_by": "nemotwins.eval.experiments",
+ "dataset": "CGMacros v1.0.0",
+ "n_patients_eval": 45,
+ "ladder": [
+  {
+   "level": "full",
+   "label": "Full CGM",
+   "rmse": {
+    "30": 21.13770096980436,
+    "60": 27.092879556038444,
+    "90": 30.257583097294486,
+    "120": 31.607495794270054
+   },
+   "auroc_high": 0.8462644677639716,
+   "auprc_high": 0.7618097924025806,
+   "auroc_low": 0.3060447981201524,
+   "coverage90": 0.9069395017793594,
+   "width90": 94.93911699650825,
+   "recon_rmse": 13.897968731818041
+  },
+  {
+   "level": "4",
+   "label": "4 pricks/day",
+   "rmse": {
+    "30": 28.967366779160987,
+    "60": 30.47952578997912,
+    "90": 31.67328799601992,
+    "120": 32.24946137829032
+   },
+   "auroc_high": 0.8136704643159959,
+   "auprc_high": 0.671445763418937,
+   "auroc_low": 0.23132941987453232,
+   "coverage90": 0.9072064056939502,
+   "width90": 113.58765603734348,
+   "recon_rmse": 29.76640585567584
+  },
+  {
+   "level": "2",
+   "label": "2 pricks/day",
+   "rmse": {
+    "30": 29.579273082605653,
+    "60": 30.720754462249538,
+    "90": 31.74001514715947,
+    "120": 32.26986182591501
+   },
+   "auroc_high": 0.8112270683183348,
+   "auprc_high": 0.6664152391825744,
+   "auroc_low": 0.22996158798562366,
+   "coverage90": 0.9050711743772242,
+   "width90": 116.62084940251684,
+   "recon_rmse": 31.13518895083734
+  },
+  {
+   "level": "1",
+   "label": "1 prick/day",
+   "rmse": {
+    "30": 30.489067133194332,
+    "60": 31.370563236990986,
+    "90": 32.124868830569184,
+    "120": 32.5733322173161
+   },
+   "auroc_high": 0.8075936556293548,
+   "auprc_high": 0.6571868148715434,
+   "auroc_low": 0.22421658566616234,
+   "coverage90": 0.9016903914590747,
+   "width90": 117.4387602790491,
+   "recon_rmse": 32.8700767939341
+  },
+  {
+   "level": "0",
+   "label": "No glucose data",
+   "rmse": {
+    "30": 30.56923361962425,
+    "60": 31.403503438529793,
+    "90": 32.090571834253026,
+    "120": 32.466130127882984
+   },
+   "auroc_high": 0.8077028110502175,
+   "auprc_high": 0.6559623769995566,
+   "auroc_low": 0.2202220179747417,
+   "coverage90": 0.9004448398576512,
+   "width90": 119.43746959224887,
+   "recon_rmse": 33.8395075658345
+  }
+ ],
+ "limitations": [
+  "No open Indian CGM dataset exists; the twin was trained and tested on US (CGMacros) and Chinese (ShanghaiT2DM) adults. Indian meals are handled through an Indian food composition table, not Indian training data.",
+  "Finger-pricks in the CGMacros experiments are simulated from the hidden CGM with 5% glucometer error; only the ShanghaiT2DM transfer arm uses real capillary readings.",
+  "CGMacros records last about 10 days, so calibration windows of 1-7 days were tested instead of the 3-14 days in the plan.",
+  "Most CGMacros participants are not on glucose-lowering drugs; 51% of ShanghaiT2DM patients use insulin, which the model does not represent explicitly.",
+  "The 90-day outlook is a projection from the twin's daily profile, not a validated HbA1c prediction.",
+  "This is decision support, not a medical device, and it has not been clinically validated."
+ ]
+}

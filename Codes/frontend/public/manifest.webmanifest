@@ -1,0 +1,14 @@
+{
+  "name": "NemoTwins",
+  "short_name": "NemoTwins",
+  "description": "Multilingual glucose digital-twin research prototype. Explore your glucose patterns. Understand the uncertainty. Not a medical device.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F6F8FA",
+  "theme_color": "#0B3A6E",
+  "lang": "en-US",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

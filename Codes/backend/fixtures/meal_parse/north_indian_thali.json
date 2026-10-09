@@ -1,0 +1,40 @@
+{
+ "dishes": [
+  {
+   "name": "steamed rice",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.95
+  },
+  {
+   "name": "dal tadka",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.9
+  },
+  {
+   "name": "chicken curry",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.9
+  },
+  {
+   "name": "aloo sabzi",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.85
+  },
+  {
+   "name": "roti",
+   "portion": 2,
+   "unit": "piece",
+   "grams": 60,
+   "confidence": 0.95
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

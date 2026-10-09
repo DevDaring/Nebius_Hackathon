@@ -1,0 +1,286 @@
+[
+  {
+    "id": "us_burger_plate",
+    "title": "Bacon cheeseburger with fries and a dill pickle",
+    "file": "us_burger_plate.jpg",
+    "region": "us",
+    "dishes_visible": [
+      {
+        "name": "Bacon cheeseburger",
+        "portion": "1 burger, 1 medium patty, 2 bacon slices"
+      },
+      {
+        "name": "French fries",
+        "portion": "~1 medium order (~145 g)"
+      },
+      {
+        "name": "Dill pickle spear",
+        "portion": "1 spear"
+      },
+      {
+        "name": "Sliced tomato and lettuce",
+        "portion": "3 slices + 1 leaf"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bacon_cheeseburger,_French_fries,_and_dill_pickle_-_Massachusetts.jpg",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "id": "us_pepperoni_pizza",
+    "title": "Pepperoni pizza slice",
+    "file": "us_pepperoni_pizza.jpg",
+    "region": "us",
+    "dishes_visible": [
+      {
+        "name": "Pepperoni pizza",
+        "portion": "1 slice (regular crust)"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pepperoni_pizza_slice_on_a_red_plate.jpg",
+    "author": "MVS9966",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+    "id": "us_pancake_breakfast",
+    "title": "Pancake breakfast with scrambled eggs and bacon",
+    "file": "us_pancake_breakfast.jpg",
+    "region": "us",
+    "dishes_visible": [
+      {
+        "name": "Pancake with a pat of butter",
+        "portion": "1 large pancake (~90 g)"
+      },
+      {
+        "name": "Scrambled eggs",
+        "portion": "~2 eggs"
+      },
+      {
+        "name": "Bacon",
+        "portion": "2 thick slices"
+      },
+      {
+        "name": "Milk",
+        "portion": "1 glass (~240 ml)"
+      },
+      {
+        "name": "Mixed berries",
+        "portion": "~1/4 cup, side bowl"
+      },
+      {
+        "name": "Butter balls",
+        "portion": "side dish"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pancakes,_Eggs,_and_Bacon_(Unsplash).jpg",
+    "author": "Gabriel Gurrola",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "id": "us_southern_plate",
+    "title": "Southern plate: fried chicken, fried okra, mac & cheese",
+    "file": "us_southern_plate.jpg",
+    "region": "us",
+    "dishes_visible": [
+      {
+        "name": "Fried chicken",
+        "portion": "3 pieces"
+      },
+      {
+        "name": "Fried okra",
+        "portion": "~3/4 cup"
+      },
+      {
+        "name": "Macaroni and cheese",
+        "portion": "~1/2 cup"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fried_chicken,_fried_okra_and_mac_%26_cheese_from_Mary_Mac%27s_Tea_Room_in_Atlanta.jpg",
+    "author": "Gatorfan252525",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "id": "us_steak_dinner",
+    "title": "Steak dinner with mashed potatoes and vegetables",
+    "file": "us_steak_dinner.jpg",
+    "region": "us",
+    "dishes_visible": [
+      {
+        "name": "Steak",
+        "portion": "2 pieces (~160 g)"
+      },
+      {
+        "name": "Mashed potatoes",
+        "portion": "~1/2 cup"
+      },
+      {
+        "name": "Shredded carrots",
+        "portion": "~1/2 cup"
+      },
+      {
+        "name": "Bok choy and sweet peppers",
+        "portion": "~1/2 cup"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Steak,_carrots,_bok_choy,_sweet_peppers,_and_mashed_potatoes_-_Massachusetts.jpg",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "id": "bengali_fish_thali",
+    "title": "Bengali fish thali (ilish macher jhol, rice, dal, bhaja)",
+    "file": "bengali_fish_thali.jpg",
+    "dishes_visible": [
+      {
+        "name": "Steamed white rice",
+        "portion": "1 moulded mound, ~1.5 cups cooked (~250 g)"
+      },
+      {
+        "name": "Ilish (hilsa) macher jhol",
+        "portion": "1 small bowl, 1-2 fish pieces in mustard/turmeric gravy"
+      },
+      {
+        "name": "Masoor/moong dal",
+        "portion": "1 katori (~150 ml)"
+      },
+      {
+        "name": "Aloo bhaja (fried potato rounds)",
+        "portion": "~10 round slices (~1 medium potato)"
+      },
+      {
+        "name": "Mixed veg torkari / ghonto (beans, potato, pumpkin)",
+        "portion": "~3/4 katori"
+      },
+      {
+        "name": "Papad bhaja (fried papad / fryums)",
+        "portion": "~6 pieces"
+      },
+      {
+        "name": "Sweet chutney with raisins",
+        "portion": "1 small bowl (~3 tbsp)"
+      },
+      {
+        "name": "Gulab jamun (pantua)",
+        "portion": "4-5 pieces in a bowl"
+      },
+      {
+        "name": "Lime wedge and green chilli",
+        "portion": "1 each (garnish)"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bengali_Fish_Thali.jpg",
+    "author": "Senjuti Dey",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "region": "india"
+  },
+  {
+    "id": "north_indian_thali",
+    "title": "North Indian veg thali (roti, dal, rice, sabzi)",
+    "file": "north_indian_thali.jpg",
+    "dishes_visible": [
+      {
+        "name": "Roti / chapati",
+        "portion": "2 medium rotis (stacked)"
+      },
+      {
+        "name": "Yellow dal (arhar/moong)",
+        "portion": "1 katori (~150 ml)"
+      },
+      {
+        "name": "Vegetable pulao / fried rice with capsicum",
+        "portion": "1 compartment, ~1 cup cooked"
+      },
+      {
+        "name": "Aloo matar / paneer-style red gravy curry",
+        "portion": "1 katori"
+      },
+      {
+        "name": "Green beans / mixed veg sabzi",
+        "portion": "~3/4 katori"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:North_Indian_Veg_Thali_-_Dharmatala,_Kolkata_-_West_Bengal_-_20190216_133637.jpg",
+    "author": "Ajaybiswas22",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "region": "india"
+  },
+  {
+    "id": "karnataka_oota",
+    "title": "Karnataka oota on banana leaf (bisi bele bath, rice, palya)",
+    "file": "karnataka_oota.jpg",
+    "dishes_visible": [
+      {
+        "name": "Plain boiled rice",
+        "portion": "~1 cup cooked (~150 g)"
+      },
+      {
+        "name": "Bisi bele bath",
+        "portion": "~1 cup"
+      },
+      {
+        "name": "Greens and green-gram palya (curry)",
+        "portion": "~1/2 katori"
+      },
+      {
+        "name": "Cucumber kosambari (salad)",
+        "portion": "~2 tbsp"
+      },
+      {
+        "name": "Raita (yogurt salad)",
+        "portion": "~2 tbsp"
+      },
+      {
+        "name": "Thovve (lentil side)",
+        "portion": "~2 tbsp"
+      },
+      {
+        "name": "Potato chips",
+        "portion": "~10-12 chips (~30 g)"
+      },
+      {
+        "name": "Gasagase payasa (poppy-seed kheer)",
+        "portion": "1 small bowl (~150 ml)"
+      },
+      {
+        "name": "Salt",
+        "portion": "a pinch"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lunch_from_Karnataka_on_a_plantain_leaf.jpg",
+    "author": "Pamri",
+    "licence": "Public domain (PD-self)",
+    "licence_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "region": "india"
+  },
+  {
+    "id": "south_breakfast",
+    "title": "Idli with sambar and coconut chutney",
+    "file": "south_breakfast.jpg",
+    "dishes_visible": [
+      {
+        "name": "Idli",
+        "portion": "4 pieces (~40 g each)"
+      },
+      {
+        "name": "Sambar",
+        "portion": "~1 katori (~200 ml), idlis soaked in it"
+      },
+      {
+        "name": "Coconut chutney (with coriander)",
+        "portion": "~3 tbsp"
+      }
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:Idli_plate_with_sambar_and_coconut_chutney.jpg",
+    "author": "Sunilkumar.kopparapu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "region": "india"
+  }
+]

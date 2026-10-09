@@ -1,0 +1,254 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-10-08T11:37:25+00:00",
+ "provider": "nebius_tokenfactory",
+ "base_url": "https://api.tokenfactory.nebius.com/v1",
+ "catalog_size": 25,
+ "nvidia_models_in_catalog": [
+  "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "nvidia/Nemotron-3-Ultra-550b-a55b",
+  "nvidia/Nemotron-3_5-Lightning",
+  "nvidia/nemotron-3-super-120b-a12b"
+ ],
+ "models": [
+  {
+   "role": "chat (router, planner, guardrails)",
+   "provider": "nebius_tokenfactory",
+   "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+   "nvidia_model": true,
+   "in_account_catalog": true,
+   "endpoint": "https://api.tokenfactory.nebius.com/v1",
+   "endpoint_region": "not reported by the Token Factory API",
+   "model_card_languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+   ],
+   "tested_functions": [
+    "text_en-US",
+    "text_es-ES",
+    "text_fr-FR",
+    "text_de-DE",
+    "text_it-IT",
+    "text_ja-JP",
+    "tool_calling",
+    "json_object",
+    "json_schema"
+   ],
+   "checks": [
+    {
+     "function": "text_en-US",
+     "passed": true,
+     "detail": "HTTP 200, 7.67s, finish=stop"
+    },
+    {
+     "function": "text_es-ES",
+     "passed": true,
+     "detail": "HTTP 200, 2.07s, finish=stop"
+    },
+    {
+     "function": "text_fr-FR",
+     "passed": true,
+     "detail": "HTTP 200, 1.23s, finish=stop"
+    },
+    {
+     "function": "text_de-DE",
+     "passed": true,
+     "detail": "HTTP 200, 1.2s, finish=stop"
+    },
+    {
+     "function": "text_it-IT",
+     "passed": true,
+     "detail": "HTTP 200, 1.24s, finish=stop"
+    },
+    {
+     "function": "text_ja-JP",
+     "passed": true,
+     "detail": "HTTP 200, 1.18s, finish=stop"
+    },
+    {
+     "function": "tool_calling",
+     "passed": true,
+     "detail": "HTTP 200, 1.5s, finish=tool_calls, calls=1"
+    },
+    {
+     "function": "json_object",
+     "passed": true,
+     "detail": "HTTP 200, 1.6s, finish=stop"
+    },
+    {
+     "function": "json_schema",
+     "passed": true,
+     "detail": "HTTP 200, 1.71s, finish=stop"
+    }
+   ],
+   "tested_locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "de-DE",
+    "it-IT",
+    "ja-JP"
+   ],
+   "last_successful_check": "2026-10-08T11:37:25+00:00",
+   "enabled": true
+  },
+  {
+   "role": "complex",
+   "provider": "nebius_tokenfactory",
+   "model_id": "nvidia/nemotron-3-super-120b-a12b",
+   "nvidia_model": true,
+   "in_account_catalog": true,
+   "endpoint": "https://api.tokenfactory.nebius.com/v1",
+   "endpoint_region": "not reported by the Token Factory API",
+   "model_card_languages": null,
+   "tested_functions": [
+    "text_en-US",
+    "text_es-ES",
+    "text_fr-FR",
+    "text_de-DE",
+    "text_it-IT",
+    "text_ja-JP",
+    "tool_calling",
+    "json_object",
+    "json_schema"
+   ],
+   "checks": [
+    {
+     "function": "text_en-US",
+     "passed": true,
+     "detail": "HTTP 200, 0.99s, finish=stop"
+    },
+    {
+     "function": "text_es-ES",
+     "passed": true,
+     "detail": "HTTP 200, 0.9s, finish=stop"
+    },
+    {
+     "function": "text_fr-FR",
+     "passed": true,
+     "detail": "HTTP 200, 0.99s, finish=stop"
+    },
+    {
+     "function": "text_de-DE",
+     "passed": true,
+     "detail": "HTTP 200, 0.92s, finish=stop"
+    },
+    {
+     "function": "text_it-IT",
+     "passed": true,
+     "detail": "HTTP 200, 0.77s, finish=stop"
+    },
+    {
+     "function": "text_ja-JP",
+     "passed": true,
+     "detail": "HTTP 200, 0.79s, finish=stop"
+    },
+    {
+     "function": "tool_calling",
+     "passed": true,
+     "detail": "HTTP 200, 1.05s, finish=tool_calls, calls=1"
+    },
+    {
+     "function": "json_object",
+     "passed": true,
+     "detail": "HTTP 200, 1.51s, finish=stop"
+    },
+    {
+     "function": "json_schema",
+     "passed": true,
+     "detail": "HTTP 200, 1.58s, finish=stop"
+    }
+   ],
+   "tested_locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "de-DE",
+    "it-IT",
+    "ja-JP"
+   ],
+   "last_successful_check": "2026-10-08T11:37:25+00:00",
+   "enabled": true
+  },
+  {
+   "role": "vision",
+   "provider": "nebius_tokenfactory",
+   "model_id": "google/gemma-3-27b-it",
+   "nvidia_model": false,
+   "in_account_catalog": true,
+   "endpoint": "https://api.tokenfactory.nebius.com/v1",
+   "endpoint_region": "not reported by the Token Factory API",
+   "model_card_languages": null,
+   "tested_functions": [
+    "image_input_json"
+   ],
+   "checks": [
+    {
+     "function": "image_input_json",
+     "passed": true,
+     "detail": "HTTP 200, 3.33s, finish=stop"
+    }
+   ],
+   "tested_locales": [],
+   "last_successful_check": "2026-10-08T11:37:25+00:00",
+   "enabled": true
+  }
+ ],
+ "integrations": [
+  {
+   "name": "Nemotron via Token Factory",
+   "status": "implemented_verified"
+  },
+  {
+   "name": "Token Factory tool calling / structured output",
+   "status": "implemented_verified"
+  },
+  {
+   "name": "NVIDIA NeMo Guardrails (open-source library) on Nemotron",
+   "status": "implemented"
+  },
+  {
+   "name": "Vision (dish candidates)",
+   "status": "implemented_verified_non_nvidia",
+   "note": "No NVIDIA vision model in the Token Factory catalog; a non-NVIDIA Token Factory model proposes dish candidates only; nutrition comes from the food table."
+  },
+  {
+   "name": "NVIDIA embeddings",
+   "status": "not_used",
+   "note": "Food lookup is a deterministic table match; retrieval is not needed. No NVIDIA embedding model in the catalog."
+  },
+  {
+   "name": "Further reading (Tavily web-search API, not a model)",
+   "status": "implemented_verified",
+   "note": "Topic-only queries, allowlisted health sites per language, snippets displayed only; never given to the model. Verified live 2026-10-08 (es, de, ja)."
+  },
+  {
+   "name": "Speech (ASR/TTS)",
+   "status": "unavailable",
+   "note": "No speech model on Token Factory; other providers are not allowed. Talk is text-only."
+  },
+  {
+   "name": "Nebius Serverless endpoint hosting",
+   "status": "configured_not_deployed",
+   "note": "deploy/ scripts prepared and validated with --dry-run; not deployed."
+  },
+  {
+   "name": "Nebius Serverless Jobs (evaluation)",
+   "status": "configured_not_deployed"
+  },
+  {
+   "name": "Nebius Object Storage (reports)",
+   "status": "configured_untested"
+  },
+  {
+   "name": "GPU numerical acceleration",
+   "status": "not_used",
+   "note": "No measured numerical bottleneck that a GPU would address."
+  }
+ ],
+ "notes": "No secrets. Regenerate with `APP_MODE=live python -m nemotwins.eval.provider_smoke`."
+}

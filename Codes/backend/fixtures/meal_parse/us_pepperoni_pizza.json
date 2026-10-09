@@ -1,0 +1,12 @@
+{
+ "dishes": [
+  {
+   "name": "pepperoni pizza",
+   "portion": 1,
+   "unit": "piece",
+   "grams": 200,
+   "confidence": 0.95
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

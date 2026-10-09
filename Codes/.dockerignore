@@ -1,0 +1,20 @@
+# Root build context for deploy/Dockerfile: code, small artefacts and reports only; never secrets or datasets.
+.env
+*.env
+.env.*
+!.env.example
+.git
+**/node_modules
+**/dist
+**/__pycache__
+**/*.py[cod]
+**/.venv
+**/*.egg-info
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+backend/data/raw
+backend/data/processed
+backend/data/cache
+backend/tests
+docs

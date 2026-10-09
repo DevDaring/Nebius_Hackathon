@@ -1,0 +1,17 @@
+# NeMo Guardrails configuration for NemoTwins.
+# The model, base URL and API key are injected at runtime from the backend settings
+# (NEMOTRON_CHAT_MODEL via Nebius Token Factory); no credential is stored in this file.
+models:
+  - type: main
+    engine: openai
+    model: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B
+
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+      - self check output
+
+lowest_temperature: 0.0

@@ -1,0 +1,30 @@
+{
+ "values": {
+  "hba1c": 6.9,
+  "fasting_glucose": 156,
+  "total_cholesterol": 214,
+  "ldl": 132,
+  "hdl": 38,
+  "triglycerides": 205,
+  "creatinine": 1.1,
+  "egfr": 71,
+  "bmi": null
+ },
+ "units": {
+  "hba1c": "%",
+  "fasting_glucose": "mg/dL",
+  "total_cholesterol": "mg/dL",
+  "ldl": "mg/dL",
+  "hdl": "mg/dL",
+  "triglycerides": "mg/dL",
+  "creatinine": "mg/dL",
+  "egfr": "mL/min/1.73m²",
+  "bmi": null
+ },
+ "medications": [
+  "Metformin 1000 mg BD",
+  "Glimepiride 1 mg OD"
+ ],
+ "diagnoses": [],
+ "collection_date": "2026-09-28"
+}

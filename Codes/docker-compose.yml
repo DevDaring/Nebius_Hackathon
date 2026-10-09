@@ -1,0 +1,57 @@
+# NemoTwins: `docker compose up --build` then open http://localhost:${WEB_PORT:-8080}
+# Works with an EMPTY (or missing) .env: APP_MODE defaults to demo (offline fixtures).
+# Ports: WEB_PORT (default 8080) and API_PORT (default 8000), bound to BIND_ADDR
+# (default 127.0.0.1; set BIND_ADDR=0.0.0.0 to expose on the network).
+# A different env file can be passed with ENV_FILE=/path/to/file.
+
+name: nemotwins
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: nemotwins
+      POSTGRES_PASSWORD: nemotwins
+      POSTGRES_DB: nemotwins
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nemotwins -d nemotwins"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ./backend
+    env_file:
+      - path: ${ENV_FILE:-.env}
+        required: false
+    environment:
+      APP_MODE: ${APP_MODE:-demo}
+      DATABASE_URL: postgresql+psycopg://nemotwins:nemotwins@db:5432/nemotwins
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${BIND_ADDR:-127.0.0.1}:${API_PORT:-8000}:8000"
+    # Persona replay states ship in the image (artifacts/persona_states); any that are
+    # missing are computed by a warm-up thread on first start.
+    # Runtime caches (live TTS audio, per-user runtime parses) need a writable volume.
+    volumes:
+      - runtime_cache:/app/data/cache
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+    depends_on:
+      - api
+    ports:
+      - "${BIND_ADDR:-127.0.0.1}:${WEB_PORT:-8080}:80"
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  runtime_cache:

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "lab_biman",
+    "title": "Biman Bakshi — lab report (clean scan, synthetic)",
+    "file": "lab_biman.png",
+    "synthetic": true,
+    "ground_truth": {
+      "patient_name": "Biman Bakshi",
+      "age": 52,
+      "sex": "Male",
+      "city": "Kolkata",
+      "collection_date": "2026-09-28",
+      "hba1c": 7.2,
+      "fpg": 148,
+      "total_cholesterol": 196,
+      "ldl": 118,
+      "hdl": 41,
+      "triglycerides": 182,
+      "creatinine": 1.0,
+      "egfr": 84,
+      "units": {
+        "hba1c": "%",
+        "fpg": "mg/dL",
+        "total_cholesterol": "mg/dL",
+        "ldl": "mg/dL",
+        "hdl": "mg/dL",
+        "triglycerides": "mg/dL",
+        "creatinine": "mg/dL",
+        "egfr": "mL/min/1.73m2"
+      },
+      "medications": [
+        "Metformin 500 mg BD"
+      ]
+    }
+  },
+  {
+    "id": "lab_ramesh",
+    "title": "Ramesh Chandra Srivastava — lab report (phone photo, synthetic)",
+    "file": "lab_ramesh.jpg",
+    "synthetic": true,
+    "ground_truth": {
+      "patient_name": "Ramesh Chandra Srivastava",
+      "age": 62,
+      "sex": "Male",
+      "city": "Lucknow",
+      "collection_date": "2026-09-28",
+      "hba1c": 6.9,
+      "fpg": 156,
+      "total_cholesterol": 214,
+      "ldl": 132,
+      "hdl": 38,
+      "triglycerides": 205,
+      "creatinine": 1.1,
+      "egfr": 71,
+      "units": {
+        "hba1c": "%",
+        "fpg": "mg/dL",
+        "total_cholesterol": "mg/dL",
+        "ldl": "mg/dL",
+        "hdl": "mg/dL",
+        "triglycerides": "mg/dL",
+        "creatinine": "mg/dL",
+        "egfr": "mL/min/1.73m2"
+      },
+      "medications": [
+        "Metformin 1000 mg BD",
+        "Glimepiride 1 mg OD"
+      ]
+    }
+  }
+]

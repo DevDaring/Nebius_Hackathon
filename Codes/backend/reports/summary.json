@@ -1,0 +1,259 @@
+{
+ "generated_at": "2026-10-05T17:14:47",
+ "generated_by": "nemotwins.eval.experiments",
+ "dataset": "CGMacros v1.0.0",
+ "n_patients_eval": 45,
+ "n_people": 45,
+ "n_recordings": 45,
+ "n_forecast_windows": 13251,
+ "evaluation_protocol": "Nested person-wise 5-fold cross-validation: for each outer fold every learned dependency (population priors behind the training rows, residual models, conformal quantiles, classifiers, isotonic calibrators, baselines) excludes that fold's people; membership recorded and asserted in artifacts/manifest.json. 95% CIs bootstrap over people. Setting: 5-day CGM calibration wear, then finger-pricks only.",
+ "validated_horizon_min": 120,
+ "ladder": [
+  {
+   "level": "full",
+   "label": "Full CGM",
+   "rmse": {
+    "30": 21.279324401346244,
+    "60": 27.25155577016382,
+    "90": 30.271922781254673,
+    "120": 31.523167440498415
+   },
+   "rmse60_ci": [
+    27.25155577016382,
+    24.58573542813925,
+    29.75636376614471
+   ],
+   "auroc_high": 0.847574312938972,
+   "auroc_high_ci": [
+    0.847574312938972,
+    0.7570881614854568,
+    0.907223023107235
+   ],
+   "auprc_high": 0.7668612698917983,
+   "auroc_low": 0.3434141387428086,
+   "coverage90": 0.9006227758007117,
+   "width90": 93.63274626205535,
+   "recon_rmse": 14.034577956211756,
+   "exploratory": {
+    "180": {
+     "rmse": 32.75147641308143,
+     "coverage90": 0.8954118497109826,
+     "width90": 119.93933819422108
+    },
+    "240": {
+     "rmse": 34.60632628764367,
+     "coverage90": 0.8946937289523983,
+     "width90": 127.4694525403012
+    }
+   }
+  },
+  {
+   "level": "4",
+   "label": "4 pricks/day",
+   "rmse": {
+    "30": 28.74294920605096,
+    "60": 30.13557181441722,
+    "90": 31.288669904675483,
+    "120": 31.919494376130633
+   },
+   "rmse60_ci": [
+    30.13557181441722,
+    26.81435348036688,
+    33.3345640013155
+   ],
+   "auroc_high": 0.8183121336227713,
+   "auroc_high_ci": [
+    0.8183121336227713,
+    0.7299310560197018,
+    0.8792008517691006
+   ],
+   "auprc_high": 0.6802391779945994,
+   "auroc_low": 0.2923485955336278,
+   "coverage90": 0.9025800711743772,
+   "width90": 111.50486488723543,
+   "recon_rmse": 29.636551425575668,
+   "exploratory": {
+    "180": {
+     "rmse": 32.615644658364594,
+     "coverage90": 0.8865606936416185,
+     "width90": 118.53758823007342
+    },
+    "240": {
+     "rmse": 34.31602838551125,
+     "coverage90": 0.8817693637935742,
+     "width90": 122.62454002293708
+    }
+   }
+  },
+  {
+   "level": "2",
+   "label": "2 pricks/day",
+   "rmse": {
+    "30": 29.37256937505062,
+    "60": 30.556712866724343,
+    "90": 31.662901153181693,
+    "120": 32.18832667824254
+   },
+   "rmse60_ci": [
+    30.556712866724343,
+    27.05188133075745,
+    33.95790543308689
+   ],
+   "auroc_high": 0.8144352876499742,
+   "auroc_high_ci": [
+    0.8144352876499742,
+    0.7269188238794434,
+    0.8750499271575826
+   ],
+   "auprc_high": 0.6737127551498279,
+   "auroc_low": 0.2990202985385225,
+   "coverage90": 0.898932384341637,
+   "width90": 114.42430186821935,
+   "recon_rmse": 31.120937817483703,
+   "exploratory": {
+    "180": {
+     "rmse": 32.80579716246727,
+     "coverage90": 0.8823157514450867,
+     "width90": 119.17534569340215
+    },
+    "240": {
+     "rmse": 34.43193369653154,
+     "coverage90": 0.8775825976153636,
+     "width90": 123.20655567165332
+    }
+   }
+  },
+  {
+   "level": "1",
+   "label": "1 prick/day",
+   "rmse": {
+    "30": 30.357947134813063,
+    "60": 31.045684640963294,
+    "90": 31.948447754441776,
+    "120": 32.42744986064371
+   },
+   "rmse60_ci": [
+    31.045684640963294,
+    27.18333665751635,
+    34.61144265875398
+   ],
+   "auroc_high": 0.8102689770833241,
+   "auroc_high_ci": [
+    0.8102689770833241,
+    0.7231931607454046,
+    0.8705640259769205
+   ],
+   "auprc_high": 0.6647531404161225,
+   "auroc_low": 0.3049685246925088,
+   "coverage90": 0.8964412811387901,
+   "width90": 115.53218561701308,
+   "recon_rmse": 32.85470641634257,
+   "exploratory": {
+    "180": {
+     "rmse": 32.97749229083792,
+     "coverage90": 0.8796062138728323,
+     "width90": 118.74107187138935
+    },
+    "240": {
+     "rmse": 34.63154009593421,
+     "coverage90": 0.8793119140802766,
+     "width90": 122.22914324259439
+    }
+   }
+  },
+  {
+   "level": "0",
+   "label": "No glucose data",
+   "rmse": {
+    "30": 30.46043766859621,
+    "60": 31.10664705156171,
+    "90": 31.992879226572466,
+    "120": 32.481212283192484
+   },
+   "rmse60_ci": [
+    31.10664705156171,
+    27.182514162771056,
+    34.70045975066831
+   ],
+   "auroc_high": 0.810702836093158,
+   "auroc_high_ci": [
+    0.810702836093158,
+    0.7256141281198789,
+    0.8708411971051147
+   ],
+   "auprc_high": 0.6633202221463377,
+   "auroc_low": 0.28154521649028647,
+   "coverage90": 0.8958185053380783,
+   "width90": 117.0988382440836,
+   "recon_rmse": 33.845888108866724,
+   "exploratory": {
+    "180": {
+     "rmse": 33.14652209548751,
+     "coverage90": 0.8783417630057804,
+     "width90": 119.28748676679773
+    },
+    "240": {
+     "rmse": 34.940586155073824,
+     "coverage90": 0.8772185309911714,
+     "width90": 122.54054297947366
+    }
+   }
+  }
+ ],
+ "protocol_change": {
+  "description": "Before: Stage-1 replays were fitted once per patient with a prior that excluded only that patient's own fold, and the same replays were reused as training rows for every outer fold, so the population prior behind a training row could include the outer-test people (indirect leakage through feature construction). Hybrid inner folds and bootstrap CIs were grouped by recording. After: nested outer-fold protocol, inner folds and CIs by person, deterministic parameter fits (stable seeds), LightGBM deterministic mode.",
+  "new": {
+   "ladder_2": {
+    "rmse60": 30.556712866724343,
+    "auroc_high": 0.8144352876499742,
+    "coverage90_60": 0.898932384341637,
+    "width90_60": 114.42430186821935
+   },
+   "full": {
+    "rmse60": 27.25155577016382
+   },
+   "transfer_gap_rmse60_shanghai_2pricks": 10.798442573746087
+  },
+  "old": {
+   "ladder_2": {
+    "rmse60": 30.720754462249538,
+    "auroc_high": 0.8112270683183348,
+    "coverage90_60": 0.9050711743772242,
+    "width90_60": 116.62084940251684
+   },
+   "full": {
+    "rmse60": 27.092879556038444
+   },
+   "transfer_gap_rmse60_shanghai_2pricks": 9.244538514938007
+  },
+  "old_source": "reports/archive/pre_nested_protocol/headline.json",
+  "delta_new_minus_old": {
+   "ladder_2": {
+    "rmse60": -0.1640415955251946,
+    "auroc_high": 0.0032082193316393948,
+    "coverage90_60": -0.006138790035587149,
+    "width90_60": -2.196547534297494
+   },
+   "full": {
+    "rmse60": 0.15867621412537503
+   },
+   "transfer_gap_rmse60_shanghai_2pricks": 1.5539040588080795
+  }
+ },
+ "manifest": {
+  "path": "artifacts/manifest.json",
+  "model_version": "pf-34e4b930b367",
+  "leakage_checks_passed": 166
+ },
+ "limitations": [
+  "No open Indian CGM dataset exists; the twin was trained and tested on US (CGMacros) and Chinese (ShanghaiT2DM) adults. Indian meals are handled through an Indian food composition table, not Indian training data.",
+  "Every CGMacros result assumes a 5-day CGM calibration wear before the finger-prick-only phase; the twin is not sensor-free.",
+  "Finger-pricks in the CGMacros experiments are simulated from the hidden CGM with 5% glucometer error; only the ShanghaiT2DM transfer arm uses real capillary readings.",
+  "CGMacros records last about 10 days, so calibration windows of 1-7 days were tested instead of the 3-14 days in the plan.",
+  "Most CGMacros participants are not on glucose-lowering drugs; 51% of ShanghaiT2DM patients use insulin, which the model does not represent explicitly.",
+  "Forecasts are validated up to 120 minutes; 180-240 minute points are exploratory (residual and band extrapolated).",
+  "P(<70 in 2 h) is not validated (too few low events). Next-best-prick timing is experimental (paired CIs cross zero).",
+  "What-if scenarios are model simulations, not proven causal effects. The 90-day outlook is a projection from the twin's daily profile, not a validated HbA1c prediction.",
+  "This is decision support, not a medical device, and it has not been clinically validated."
+ ]
+}

@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------- secrets
+# Real keys live only in the untracked .env (see .env.example).
+.env
+*.env
+.env.*
+!.env.example
+backend/.env
+
+# ---------------------------------------------------------------- python
+backend/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------- node / frontend
+node_modules/
+frontend/dist/
+dist/
+*.tsbuildinfo
+.vite/
+
+# ---------------------------------------------------------------- data (never commit raw data)
+# Regenerate with `make data`. Anchored so backend/data/food/raw (INDB, committed) is kept.
+/backend/data/raw/
+/backend/data/processed/
+/backend/data/cache/
+
+# ---------------------------------------------------------------- model artefacts
+# Small artefacts (prior_*.json, hybrid_cgmacros.pkl ~2 MB, param_fits.parquet,
+# persona_states/, demo_series.parquet) ARE committed so `docker compose up`
+# works without the raw data. Anything above 50 MB must not be committed:
+# list such files here (git cannot ignore by size; the pre-commit hook
+# check-added-large-files --maxkb=51200 enforces the limit).
+backend/artifacts/**/*.large.pkl
+backend/artifacts/tmp/
+
+# ---------------------------------------------------------------- logs, OS, editors
+logs/
+*.log
+nohup.out
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---------------------------------------------------------------- local docker overrides
+docker-compose.override.yml
+
+# ---------------------------------------------------------------- misc local
+docs/.~lock*
+docs/*.tmp
+*.tmp
+backend/.contract_v3_ready

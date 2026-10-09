@@ -1,0 +1,467 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Self-hosted fonts (SIL Open Font License 1.1; see public/fonts/README.txt).
+   Variable weight files, subset with unicode-range so a page only downloads what it
+   shows. No Google Fonts request at runtime. Japanese uses the system CJK fonts.
+   ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2-variations"), url("/fonts/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/plus-jakarta-sans-latin-ext-wght-normal.woff2") format("woff2-variations"), url("/fonts/plus-jakarta-sans-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/plus-jakarta-sans-latin-wght-italic.woff2") format("woff2-variations"), url("/fonts/plus-jakarta-sans-latin-wght-italic.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/plus-jakarta-sans-latin-ext-wght-italic.woff2") format("woff2-variations"), url("/fonts/plus-jakarta-sans-latin-ext-wght-italic.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ------------------------------------------------------------------
+   Tokens (NemoTwins marine theme). Channels are "R G B" so Tailwind can add alpha.
+   Night = the twin stage (always deep marine). Paper = clean off-white reading surfaces.
+   Token names are role names, not colour names: "marigold" is the
+   primary marine-blue accent and "teal" the restrained secondary accent.
+   *-ink variants are the accents tuned for WCAG AA text on paper (checked >= 4.5:1, light and dark).
+   ------------------------------------------------------------------ */
+:root {
+  --night: 8 27 51; /* #081B33 deep marine */
+  --night-2: 13 38 68;
+  --night-3: 22 54 92;
+  --night-line: 44 80 124;
+  --moon: 236 243 250;
+  --moon-2: 178 198 220;
+  --moon-3: 140 164 192;
+  --coral-night: 246 146 128;
+  --violet-night: 172 162 252;
+
+  --paper: 246 248 250; /* #F6F8FA off-white */
+  --paper-2: 236 241 246;
+  --card: 255 255 255;
+  --ink: 15 31 56; /* #0F1F38 dark navy */
+  --ink-2: 52 70 98;
+  --ink-3: 84 100 124;
+  --line: 219 227 236;
+  --shadow: 15 31 56;
+
+  --marigold: 86 176 255; /* #56B0FF marine blue accent (fills, lines on the night stage) */
+  --marigold-ink: 18 92 168; /* #125CA8 accent text on paper */
+  --teal: 52 184 170; /* #34B8AA restrained teal */
+  --teal-ink: 10 110 102;
+  --coral: 229 96 77; /* #E5604D */
+  --coral-ink: 176 56 40;
+  --violet: 124 108 240; /* #7C6CF0 */
+  --violet-ink: 86 70 204;
+  --focus: 18 92 168;
+
+  --font-ui: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: 9 20 36;
+    --paper-2: 14 29 50;
+    --card: 18 36 61;
+    --ink: 232 239 247;
+    --ink-2: 190 204 222;
+    --ink-3: 150 168 192;
+    --line: 40 62 92;
+    --shadow: 0 0 0;
+    --marigold-ink: 120 190 255;
+    --teal-ink: 92 210 195;
+    --coral-ink: 244 142 124;
+    --violet-ink: 170 160 250;
+    --focus: 120 190 255;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: 9 20 36;
+  --paper-2: 14 29 50;
+  --card: 18 36 61;
+  --ink: 232 239 247;
+  --ink-2: 190 204 222;
+  --ink-3: 150 168 192;
+  --line: 40 62 92;
+  --shadow: 0 0 0;
+  --marigold-ink: 120 190 255;
+  --teal-ink: 92 210 195;
+  --coral-ink: 244 142 124;
+  --violet-ink: 170 160 250;
+  --focus: 120 190 255;
+  color-scheme: dark;
+}
+
+/* Japanese: no bundled CJK font; use the platform's Japanese UI fonts (Latin digits still come from
+   Plus Jakarta via .num). Kanji and kana need a little more line height. */
+:root:lang(ja) {
+  --font-ui: "Plus Jakarta Sans", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP",
+    "Source Han Sans JP", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-paper text-ink font-sans;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+  :focus-visible {
+    outline: 2.5px solid rgb(var(--focus));
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .on-night :focus-visible,
+  .on-night:focus-visible {
+    outline-color: rgb(var(--marigold));
+  }
+  ::selection {
+    background: rgb(var(--marigold) / 0.35);
+  }
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.015em;
+  }
+  :lang(ja) h1,
+  :lang(ja) h2,
+  :lang(ja) h3 {
+    letter-spacing: 0;
+    line-height: 1.35;
+  }
+}
+
+@layer components {
+  .num {
+    /* Latin digits from Plus Jakarta; any CJK unit text in the same cell falls through to the UI stack. */
+    font-family: "Plus Jakarta Sans", var(--font-ui);
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  .eyebrow {
+    @apply text-[0.7rem] font-semibold uppercase tracking-[0.14em];
+  }
+  :lang(ja) .eyebrow {
+    @apply text-xs normal-case tracking-normal;
+  }
+  .card {
+    @apply rounded-3xl border border-line/70 bg-card text-ink shadow-soft;
+  }
+  .stage {
+    @apply bg-night text-moon;
+    background-image:
+      radial-gradient(1200px 400px at 85% -10%, rgb(var(--marigold) / 0.12), transparent 60%),
+      radial-gradient(900px 380px at 0% 110%, rgb(var(--teal) / 0.1), transparent 60%);
+  }
+  .stage-card {
+    @apply rounded-3xl border border-night-line/60 bg-night-2/80;
+  }
+  /* Full-page night screens: a black-to-blue gradient that drifts and swells like a slow wave. The two
+     viewport-sized layers move by transform only (GPU-composited, no repaint per frame). */
+  .stage-wave {
+    position: relative;
+    isolation: isolate;
+  }
+  .stage-wave::before,
+  .stage-wave::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    will-change: transform;
+  }
+  .stage-wave::before {
+    background: linear-gradient(115deg, #000000 0%, #000207 20%, #021028 34%, #072a60 45%, #0c4593 51%, #072a60 57%, #021028 68%, #000207 82%, #000000 100%);
+    animation: stage-wave 26s ease-in-out infinite alternate;
+  }
+  .stage-wave::after {
+    background:
+      radial-gradient(44% 26% at 22% 72%, rgb(40 120 255 / 0.2), transparent 70%),
+      radial-gradient(38% 22% at 78% 26%, rgb(0 170 255 / 0.14), transparent 70%),
+      radial-gradient(70% 30% at 50% 112%, rgb(10 60 170 / 0.32), transparent 70%);
+    mix-blend-mode: screen;
+    animation: stage-swell 17s ease-in-out infinite alternate;
+  }
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold transition
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-paper hover:bg-ink/90;
+  }
+  .btn-marigold {
+    @apply btn bg-marigold text-night hover:brightness-105;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-card text-ink hover:bg-paper-2;
+  }
+  .btn-night {
+    @apply btn border border-night-line bg-night-2 text-moon hover:bg-night-3;
+  }
+  .chip {
+    @apply inline-flex min-h-[36px] items-center gap-1.5 rounded-full border px-3 text-sm font-medium transition;
+  }
+  .field {
+    @apply w-full rounded-2xl border border-line bg-card px-4 py-3 text-base text-ink placeholder:text-ink-3
+      focus:border-marigold-ink focus:outline-none focus:ring-2 focus:ring-marigold/40;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, rgb(var(--line) / 0.5) 25%, rgb(var(--line) / 0.9) 50%, rgb(var(--line) / 0.5) 75%);
+    background-size: 200% 100%;
+    @apply animate-shimmer rounded-2xl;
+  }
+  .skeleton-night {
+    background: linear-gradient(90deg, rgb(var(--night-2)) 25%, rgb(var(--night-3)) 50%, rgb(var(--night-2)) 75%);
+    background-size: 200% 100%;
+    @apply animate-shimmer rounded-2xl;
+  }
+  .link {
+    @apply font-semibold text-marigold-ink underline decoration-marigold/50 underline-offset-4 hover:decoration-marigold;
+  }
+}
+
+/* Chart text (SVG) */
+.chart-label {
+  font-family: "Plus Jakarta Sans", var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+}
+
+.breathe {
+  animation: breathe 6s ease-in-out infinite;
+}
+
+/* Body view time scrubber: a transparent native range over a custom track (keyboard + screen readers keep working). */
+.body-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+}
+.body-range::-webkit-slider-runnable-track {
+  height: 100%;
+  background: transparent;
+}
+.body-range::-moz-range-track {
+  height: 100%;
+  background: transparent;
+}
+.body-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 7px;
+  border-radius: 9999px;
+  background: rgb(var(--paper));
+  border: 3px solid rgb(var(--marigold));
+  box-shadow: 0 0 0 5px rgb(var(--marigold) / 0.22), 0 2px 8px rgb(0 0 0 / 0.4);
+}
+.body-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: rgb(var(--paper));
+  border: 3px solid rgb(var(--marigold));
+  box-shadow: 0 0 0 5px rgb(var(--marigold) / 0.22);
+}
+.body-stage {
+  background:
+    radial-gradient(60% 55% at 50% 42%, rgb(var(--marigold) / 0.16), transparent 70%),
+    radial-gradient(40% 30% at 50% 96%, rgb(var(--teal) / 0.14), transparent 70%),
+    linear-gradient(180deg, rgb(var(--night) / 0.2), rgb(5 18 36 / 0.65));
+}
+@keyframes body-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+.body-flow {
+  animation: body-flow linear infinite;
+}
+
+/* Presentation mode: larger labels, a cleaner composition, no footer. */
+html.presentation {
+  font-size: 112.5%;
+}
+html.presentation .chart-label {
+  font-size: 13px;
+}
+html.presentation .presentation-hide {
+  display: none !important;
+}
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .breathe {
+    animation: none;
+    opacity: 0.85;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  :root {
+    --paper: 255 255 255;
+    --card: 255 255 255;
+    --ink: 20 20 30;
+    --ink-2: 50 50 64;
+    --ink-3: 80 80 96;
+    --line: 210 210 214;
+  }
+  html,
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .card {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .print-compact {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .print-compact h1 {
+    font-size: 15px !important;
+  }
+  .print-compact .card,
+  .print-compact section {
+    padding: 6px 8px !important;
+    margin-top: 5px !important;
+  }
+  .print-compact .print-agp > div {
+    height: 150px !important;
+  }
+  .print-compact .print-agp svg {
+    height: 150px !important;
+  }
+  .print-compact p,
+  .print-compact li {
+    margin-top: 0 !important;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Decorative clownfish (components/ClownfishLayer.tsx). Its band is an empty strip reserved in the
+   page flow above the footer; nothing else is ever placed inside it. The blur applies to the fish
+   only, never to content. Hidden in print, presentation mode and for reduced motion.
+   ------------------------------------------------------------------ */
+.fish-band {
+  position: relative;
+  z-index: 0;
+  height: 56px;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.fish {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(1.5px);
+  will-change: transform, opacity;
+}
+.fish > svg {
+  opacity: 0.38;
+}
+.fish-night > svg {
+  opacity: 0.45;
+}
+@media (max-width: 767px) {
+  .fish-band {
+    height: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fish {
+    display: none !important;
+  }
+}
+@media print {
+  .fish-band,
+  .fish {
+    display: none !important;
+  }
+}
+html.presentation .fish-band {
+  display: none !important;
+}
+
+@keyframes stage-wave {
+  0% { transform: scale(2) rotate(-7deg) translate(-13%, -5%); }
+  25% { transform: scale(2) rotate(-2deg) translate(-5%, 5%); }
+  50% { transform: scale(2) rotate(3deg) translate(3%, -4%); }
+  75% { transform: scale(2) rotate(7deg) translate(10%, 5%); }
+  100% { transform: scale(2) rotate(2deg) translate(14%, -3%); }
+}
+@keyframes stage-swell {
+  0% { transform: translate(-6%, 3%) scale(1); }
+  50% { transform: translate(5%, -4%) scale(1.15); }
+  100% { transform: translate(-2%, 5%) scale(0.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-wave::before,
+  .stage-wave::after {
+    animation: none;
+  }
+}

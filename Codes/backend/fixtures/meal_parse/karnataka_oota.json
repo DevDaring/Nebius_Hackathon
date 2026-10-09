@@ -1,0 +1,54 @@
+{
+ "dishes": [
+  {
+   "name": "steamed rice",
+   "portion": 1.5,
+   "unit": "katori",
+   "grams": 225,
+   "confidence": 0.95
+  },
+  {
+   "name": "sambar",
+   "portion": 1,
+   "unit": "katori",
+   "grams": 150,
+   "confidence": 0.9
+  },
+  {
+   "name": "potato fry",
+   "portion": 0.5,
+   "unit": "katori",
+   "grams": 75,
+   "confidence": 0.85
+  },
+  {
+   "name": "papad",
+   "portion": 5,
+   "unit": "piece",
+   "grams": 25,
+   "confidence": 0.9
+  },
+  {
+   "name": "vegetable curry",
+   "portion": 0.75,
+   "unit": "katori",
+   "grams": 112,
+   "confidence": 0.85
+  },
+  {
+   "name": "pickle",
+   "portion": 0.25,
+   "unit": "katori",
+   "grams": 37,
+   "confidence": 0.75
+  },
+  {
+   "name": "rasam",
+   "portion": 0.25,
+   "unit": "katori",
+   "grams": 37,
+   "confidence": 0.75
+  }
+ ],
+ "model": "nebius_tokenfactory:google/gemma-3-27b-it"
+}

@@ -1,0 +1,1225 @@
+{
+ "generated_at": "2026-10-05T17:06:30",
+ "generated_by": "nemotwins.eval.experiments",
+ "recent_prick_value": {
+  "definition": "Forecast origins within 90 minutes after a finger-prick (2 pricks/day arm) compared with the same people and clock times when the twin had no glucose data after calibration.",
+  "n_people": 45,
+  "n_recordings": 45,
+  "n_forecast_windows": 1588,
+  "n_forecasts": 1588,
+  "n_patients": 45,
+  "rmse_with_prick": {
+   "30": 26.77467060193745,
+   "60": 31.68856992265772,
+   "90": 35.39627340164105,
+   "120": 37.5040820103567
+  },
+  "rmse_without": {
+   "30": 31.132129480028098,
+   "60": 33.66391865949524,
+   "90": 36.30090732000588,
+   "120": 37.952305310214506
+  },
+  "rmse60_difference_ci": [
+   -1.9753487368375175,
+   -3.819093603451268,
+   -0.517540668508578
+  ]
+ },
+ "paired_band_width": {
+  "definition": "Paired at identical forecast origins (same person, same time): band width of the 90% forecast band with 2 finger-pricks/day vs with no glucose data after the 5-day CGM calibration. paired_difference = with - without (negative = narrower with pricks); 95% CI by bootstrap over people.",
+  "recent_prick": {
+   "subset": "origins within 90 min after a prick",
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 1588,
+   "by_horizon": {
+    "30": {
+     "mean_width_with_pricks": 93.44944647059828,
+     "mean_width_without_glucose": 116.750364082195,
+     "paired_difference": -23.30091761159674,
+     "paired_difference_ci95": [
+      -32.59663833567658,
+      -15.011845462166079
+     ],
+     "coverage90_with_pricks": 0.8998682476943346,
+     "coverage90_without_glucose": 0.8893280632411067
+    },
+    "60": {
+     "mean_width_with_pricks": 111.04716497163841,
+     "mean_width_without_glucose": 121.60785658486103,
+     "paired_difference": -10.560691613222604,
+     "paired_difference_ci95": [
+      -17.503863209193746,
+      -4.658294568717235
+     ],
+     "coverage90_with_pricks": 0.8993288590604027,
+     "coverage90_without_glucose": 0.9013422818791946
+    },
+    "90": {
+     "mean_width_with_pricks": 115.06147133986785,
+     "mean_width_without_glucose": 121.62343352273241,
+     "paired_difference": -6.561962182864572,
+     "paired_difference_ci95": [
+      -12.076673138675023,
+      -2.166139956658925
+     ],
+     "coverage90_with_pricks": 0.8993197278911564,
+     "coverage90_without_glucose": 0.8891156462585034
+    },
+    "120": {
+     "mean_width_with_pricks": 117.95071356884577,
+     "mean_width_without_glucose": 121.98253702804784,
+     "paired_difference": -4.031823459202089,
+     "paired_difference_ci95": [
+      -8.708252581829685,
+      -0.516281881594455
+     ],
+     "coverage90_with_pricks": 0.9021887824897401,
+     "coverage90_without_glucose": 0.8967168262653898
+    }
+   }
+  },
+  "control_far_from_prick": {
+   "subset": "origins >= 8 h after a prick",
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 5206,
+   "by_horizon": {
+    "30": {
+     "mean_width_with_pricks": 122.46023495152022,
+     "mean_width_without_glucose": 111.06897947538006,
+     "paired_difference": 11.391255476140142,
+     "paired_difference_ci95": [
+      9.632847017571109,
+      13.273374851392804
+     ],
+     "coverage90_with_pricks": 0.8842105263157894,
+     "coverage90_without_glucose": 0.8577597840755735
+    },
+    "60": {
+     "mean_width_with_pricks": 128.06101088200506,
+     "mean_width_without_glucose": 116.04249714297775,
+     "paired_difference": 12.01851373902732,
+     "paired_difference_ci95": [
+      10.150430655574416,
+      14.1173495435798
+     ],
+     "coverage90_with_pricks": 0.8885582905058155,
+     "coverage90_without_glucose": 0.862320800649175
+    },
+    "90": {
+     "mean_width_with_pricks": 129.03187099613328,
+     "mean_width_without_glucose": 117.0314425709324,
+     "paired_difference": 12.000428425200875,
+     "paired_difference_ci95": [
+      10.102038031507245,
+      14.036663362824282
+     ],
+     "coverage90_with_pricks": 0.8814895351997826,
+     "coverage90_without_glucose": 0.8562109268823049
+    },
+    "120": {
+     "mean_width_with_pricks": 129.07031058870336,
+     "mean_width_without_glucose": 117.05138242870555,
+     "paired_difference": 12.018928159997808,
+     "paired_difference_ci95": [
+      10.053586840600815,
+      14.178563677171484
+     ],
+     "coverage90_with_pricks": 0.8862455564670495,
+     "coverage90_without_glucose": 0.8515176374077112
+    }
+   }
+  }
+ },
+ "by_hours_since_reading": [
+  {
+   "hours_since_reading": "0-1.5",
+   "n": 1588,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 1588,
+   "rmse60": 31.68856992265772,
+   "coverage90_60": 0.8993288590604027,
+   "width90_60": 110.58831974525803
+  },
+  {
+   "hours_since_reading": "1.5-4",
+   "n": 2504,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 2504,
+   "rmse60": 33.13781480195747,
+   "coverage90_60": 0.9052948773138183,
+   "width90_60": 115.8127184387449
+  },
+  {
+   "hours_since_reading": "4-8",
+   "n": 3953,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 3953,
+   "rmse60": 26.584657371095815,
+   "coverage90_60": 0.9050938337801608,
+   "width90_60": 107.3108169339278
+  },
+  {
+   "hours_since_reading": "8-+",
+   "n": 4935,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 4935,
+   "rmse60": 31.914493619813715,
+   "coverage90_60": 0.891494002181025,
+   "width90_60": 122.64535939732129
+  }
+ ],
+ "by_hours_since_reading_note": "Descriptive only and confounded by clock time: in the 2 pricks/day arm the readings are at 07:00 and 22:00, so 'hours since the last reading' is almost a function of the time of day (and of meals). Use paired_band_width (same origins, with vs without pricks) for the controlled comparison.",
+ "title": "Sensor-ladder ablation (Experiment 1)",
+ "dataset": "CGMacros v1.0.0 (PhysioNet), 45 adults (14 T2D, 16 prediabetes, 15 healthy)",
+ "protocol": "Calibrate on the first 5 days of CGM (a 5-day CGM calibration wear), then hide the CGM. The twin sees only k simulated finger-pricks per day (fasting 07:00, 11:00, 16:00, post-dinner 22:00; glucometer error 5% sd) plus logged meals and activity. Forecasts every 30 min and at every meal; scored against the hidden CGM. Nested person-wise 5-fold cross-validation (every learned dependency of a fold's model, including the population priors behind its training rows, excludes that fold's people); 95% CIs bootstrap over people.",
+ "validated_horizon_min": 120,
+ "levels": [
+  {
+   "level": "full",
+   "label": "Full CGM",
+   "n_patients": 45,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "n_forecasts": 13251,
+   "rmse": {
+    "30": 21.279324401346244,
+    "60": 27.25155577016382,
+    "90": 30.271922781254673,
+    "120": 31.523167440498415
+   },
+   "mard_60": 13.399335240669735,
+   "coverage90": {
+    "30": 0.9034403262989892,
+    "60": 0.9006227758007117,
+    "90": 0.8966256025709695,
+    "120": 0.8974910394265233
+   },
+   "width90": {
+    "30": 72.13238940611839,
+    "60": 93.63274626205535,
+    "90": 102.80151108877901,
+    "120": 108.50590522325271
+   },
+   "auroc_high": 0.847574312938972,
+   "auprc_high": 0.7668612698917983,
+   "brier_high": 0.11546287645493923,
+   "ece_high": 0.03581424634999157,
+   "prevalence_high": 0.2777033663719975,
+   "auroc_low": 0.3434141387428086,
+   "auprc_low": 0.012713406782102133,
+   "ece_low": 0.0010699200143288283,
+   "prevalence_low": 0.007411376015715689,
+   "abstain_rate": 0.017508112595275828,
+   "rmse60_ci": [
+    27.25155577016382,
+    24.58573542813925,
+    29.75636376614471
+   ],
+   "auroc_high_ci": [
+    0.847574312938972,
+    0.7570881614854568,
+    0.907223023107235
+   ],
+   "coverage90_60_ci": [
+    0.9006227758007117,
+    0.8658534460814233,
+    0.9248114807199221
+   ],
+   "mechanistic_only": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 13251,
+    "n_forecasts": 13251,
+    "rmse": {
+     "30": 23.266295319703982,
+     "60": 28.793606202075875,
+     "90": 32.17550088569764,
+     "120": 34.34322239773112
+    },
+    "mard_60": 13.26286164769956,
+    "auroc_high": 0.8125153089881497,
+    "auprc_high": 0.7157615745783944,
+    "brier_high": 0.14022622257939696,
+    "ece_high": 0.11654076256808645,
+    "prevalence_high": 0.2777033663719975,
+    "auroc_low": 0.5987342677655567,
+    "auprc_low": 0.14865423978190934,
+    "ece_low": 0.004699229097836116,
+    "prevalence_low": 0.007411376015715689,
+    "abstain_rate": 0.017508112595275828
+   },
+   "reconstruction": {
+    "rmse": 14.034577956211756,
+    "mard": 5.113666590527979,
+    "particle_band_coverage90": 0.7627489262007029,
+    "particle_band_width90": 19.09217595803335,
+    "clarke": {
+     "A": 95.95939086294416,
+     "B": 3.923467395548614,
+     "C": 0.007809449433814917,
+     "D": 0.10933229207340882,
+     "E": 0.0
+    }
+   },
+   "t2d_only": {
+    "n_patients": 14,
+    "n_people": 14,
+    "n_recordings": 14,
+    "n_forecast_windows": 4052,
+    "n_forecasts": 4052,
+    "rmse": {
+     "30": 23.807451159196674,
+     "60": 32.546931272026555,
+     "90": 38.01865869080724,
+     "120": 40.386821118828074
+    },
+    "mard_60": 14.958632433780986,
+    "coverage90": {
+     "30": 0.9116132723112128,
+     "60": 0.9015216767154751,
+     "90": 0.8889850057670127,
+     "120": 0.895712630359212
+    },
+    "width90": {
+     "30": 82.06174057637185,
+     "60": 112.12035800056381,
+     "90": 127.1511639207242,
+     "120": 137.14381675008653
+    },
+    "auroc_high": 0.8925398730123293,
+    "auprc_high": 0.8777410813204307,
+    "brier_high": 0.13097140969127094,
+    "ece_high": 0.053200077567729216,
+    "prevalence_high": 0.5037463976945245,
+    "auroc_low": 0.4637321048558716,
+    "auprc_low": 0.030253275266797473,
+    "ece_low": 0.0005082589357273204,
+    "prevalence_low": 0.0069164265129683,
+    "abstain_rate": 0.04096742349457058
+   },
+   "meal_anchored": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 783,
+    "n_forecasts": 783,
+    "rmse": {
+     "30": 27.579020356710352,
+     "60": 35.60788930360282,
+     "90": 36.1451455105054,
+     "120": 35.75876122463926
+    },
+    "mard_60": 17.653007491008808,
+    "coverage90": {
+     "30": 0.8147174770039421,
+     "60": 0.7883597883597884,
+     "90": 0.8148148148148148,
+     "120": 0.8106666666666666
+    },
+    "width90": {
+     "30": 70.687525726017,
+     "60": 89.37003836305128,
+     "90": 92.60977349738565,
+     "120": 93.01084183763113
+    },
+    "auroc_high": 0.7743885233972406,
+    "auprc_high": 0.7457705206078391,
+    "brier_high": 0.1717609620072711,
+    "ece_high": 0.05672907176905075,
+    "prevalence_high": 0.3827814569536424,
+    "auroc_low": 0.4604,
+    "auprc_low": 0.008467908902691512,
+    "ece_low": 0.0021109715403323437,
+    "prevalence_low": 0.006622516556291391,
+    "abstain_rate": 0.04086845466155811
+   },
+   "abstain_vs_not": {
+    "rmse60_abstained": 44.15805093510961,
+    "rmse60_confident": 26.857635733038222
+   },
+   "exploratory_horizons": {
+    "status": "exploratory",
+    "validated_horizon_min": 120,
+    "note": "Beyond 120 min the learned residual and the conformal band are NOT trained or calibrated: the 120-min residual is held and the particle band is widened by the 120-min conformal ratio, exactly as the app draws its 4-hour curve. Later meals are unknown to the forecast. Exploratory only.",
+    "horizons": {
+     "180": {
+      "rmse": 32.75147641308143,
+      "rmse_mechanistic_only": 35.869028519543434,
+      "coverage90": 0.8954118497109826,
+      "width90": 119.93933819422108,
+      "n_forecast_windows": 11072,
+      "n_people": 45,
+      "rmse_ci": [
+       32.75147641308143,
+       29.05661436277445,
+       36.38042766883936
+      ],
+      "status": "exploratory"
+     },
+     "240": {
+      "rmse": 34.60632628764367,
+      "rmse_mechanistic_only": 36.316422652335774,
+      "coverage90": 0.8946937289523983,
+      "width90": 127.4694525403012,
+      "n_forecast_windows": 10987,
+      "n_people": 45,
+      "rmse_ci": [
+       34.60632628764367,
+       30.623805531065997,
+       38.4140256522466
+      ],
+      "status": "exploratory"
+     }
+    }
+   },
+   "low_events": {
+    "positive_windows": 83,
+    "prevalence": 0.007411376015715689,
+    "patients_with_lows": 9,
+    "validated": false,
+    "note": "Too few low-glucose events in CGMacros (participants are mostly not on glucose-lowering drugs) to train or validate P(<70). Shown in the app with a 'not validated' label."
+   }
+  },
+  {
+   "level": "4",
+   "label": "4 pricks/day",
+   "n_patients": 45,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "n_forecasts": 13251,
+   "rmse": {
+    "30": 28.74294920605096,
+    "60": 30.13557181441722,
+    "90": 31.288669904675483,
+    "120": 31.919494376130633
+   },
+   "mard_60": 15.224605715509062,
+   "coverage90": {
+    "30": 0.8985635751019684,
+    "60": 0.9025800711743772,
+    "90": 0.899214425995358,
+    "120": 0.899731182795699
+   },
+   "width90": {
+    "30": 103.97142611054271,
+    "60": 111.50486488723543,
+    "90": 113.62346247311771,
+    "120": 114.89428322909068
+   },
+   "auroc_high": 0.8183121336227713,
+   "auprc_high": 0.6802391779945994,
+   "brier_high": 0.13628623071659796,
+   "ece_high": 0.03320539382477766,
+   "prevalence_high": 0.2777033663719975,
+   "auroc_low": 0.2923485955336278,
+   "auprc_low": 0.007039467502516072,
+   "ece_low": 0.0004114167325553223,
+   "prevalence_low": 0.007411376015715689,
+   "abstain_rate": 0.00920685231303298,
+   "rmse60_ci": [
+    30.13557181441722,
+    26.81435348036688,
+    33.3345640013155
+   ],
+   "auroc_high_ci": [
+    0.8183121336227713,
+    0.7299310560197018,
+    0.8792008517691006
+   ],
+   "coverage90_60_ci": [
+    0.9025800711743772,
+    0.8597012158006923,
+    0.9303420603860327
+   ],
+   "mechanistic_only": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 13251,
+    "n_forecasts": 13251,
+    "rmse": {
+     "30": 31.024641874033794,
+     "60": 33.109810930726,
+     "90": 34.773860580232636,
+     "120": 35.93715059582655
+    },
+    "mard_60": 15.926280159105586,
+    "auroc_high": 0.7917082624611487,
+    "auprc_high": 0.6461831069663748,
+    "brier_high": 0.1588311972299114,
+    "ece_high": 0.1228323957496205,
+    "prevalence_high": 0.2777033663719975,
+    "auroc_low": 0.5312563676801485,
+    "auprc_low": 0.03212626161211199,
+    "ece_low": 0.020145846355329344,
+    "prevalence_low": 0.007411376015715689,
+    "abstain_rate": 0.00920685231303298
+   },
+   "reconstruction": {
+    "rmse": 29.636551425575668,
+    "mard": 13.789995883266654,
+    "particle_band_coverage90": 0.6729871144084342,
+    "particle_band_width90": 51.9196367786361,
+    "clarke": {
+     "A": 76.07653260445139,
+     "B": 22.98789535337759,
+     "C": 0.08121827411167512,
+     "D": 0.8543537680593518,
+     "E": 0.0
+    }
+   },
+   "t2d_only": {
+    "n_patients": 14,
+    "n_people": 14,
+    "n_recordings": 14,
+    "n_forecast_windows": 4052,
+    "n_forecasts": 4052,
+    "rmse": {
+     "30": 35.41348085932921,
+     "60": 37.43341385715264,
+     "90": 39.722267798683305,
+     "120": 41.35307200605271
+    },
+    "mard_60": 17.739260337357738,
+    "coverage90": {
+     "30": 0.9124713958810069,
+     "60": 0.9147286821705426,
+     "90": 0.9077277970011534,
+     "120": 0.9035341830822712
+    },
+    "width90": {
+     "30": 132.81174317100536,
+     "60": 144.16818245335074,
+     "90": 148.04281718491444,
+     "120": 150.59663266568842
+    },
+    "auroc_high": 0.8315258918770946,
+    "auprc_high": 0.7923665510827794,
+    "brier_high": 0.16710599792889977,
+    "ece_high": 0.04668661742137764,
+    "prevalence_high": 0.5037463976945245,
+    "auroc_low": 0.3707801315534919,
+    "auprc_low": 0.009303705864588726,
+    "ece_low": 0.00034741589871108147,
+    "prevalence_low": 0.0069164265129683,
+    "abstain_rate": 0.015054294175715697
+   },
+   "meal_anchored": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 783,
+    "n_forecasts": 783,
+    "rmse": {
+     "30": 30.6638220471964,
+     "60": 35.24429133530391,
+     "90": 35.69408406034757,
+     "120": 35.99303266821484
+    },
+    "mard_60": 17.94206574499975,
+    "coverage90": {
+     "30": 0.8501971090670171,
+     "60": 0.8187830687830688,
+     "90": 0.8187830687830688,
+     "120": 0.8133333333333334
+    },
+    "width90": {
+     "30": 99.79938275378414,
+     "60": 104.81811881095939,
+     "90": 100.27090966803848,
+     "120": 96.22870999671719
+    },
+    "auroc_high": 0.7678727891055435,
+    "auprc_high": 0.7310228835287458,
+    "brier_high": 0.17857041265726012,
+    "ece_high": 0.04920733818167871,
+    "prevalence_high": 0.3827814569536424,
+    "auroc_low": 0.4230666666666667,
+    "auprc_low": 0.03904150933703218,
+    "ece_low": 0.0024626651823883424,
+    "prevalence_low": 0.006622516556291391,
+    "abstain_rate": 0.02681992337164751
+   },
+   "abstain_vs_not": {
+    "rmse60_abstained": 48.98418555869499,
+    "rmse60_confident": 29.87190339016659
+   },
+   "exploratory_horizons": {
+    "status": "exploratory",
+    "validated_horizon_min": 120,
+    "note": "Beyond 120 min the learned residual and the conformal band are NOT trained or calibrated: the 120-min residual is held and the particle band is widened by the 120-min conformal ratio, exactly as the app draws its 4-hour curve. Later meals are unknown to the forecast. Exploratory only.",
+    "horizons": {
+     "180": {
+      "rmse": 32.615644658364594,
+      "rmse_mechanistic_only": 36.4586786656116,
+      "coverage90": 0.8865606936416185,
+      "width90": 118.53758823007342,
+      "n_forecast_windows": 11072,
+      "n_people": 45,
+      "rmse_ci": [
+       32.615644658364594,
+       29.006442568304415,
+       36.133517089087505
+      ],
+      "status": "exploratory"
+     },
+     "240": {
+      "rmse": 34.31602838551125,
+      "rmse_mechanistic_only": 36.6051172560823,
+      "coverage90": 0.8817693637935742,
+      "width90": 122.62454002293708,
+      "n_forecast_windows": 10987,
+      "n_people": 45,
+      "rmse_ci": [
+       34.31602838551125,
+       30.344532248657135,
+       38.08755971329687
+      ],
+      "status": "exploratory"
+     }
+    }
+   },
+   "low_events": {
+    "positive_windows": 83,
+    "prevalence": 0.007411376015715689,
+    "patients_with_lows": 9,
+    "validated": false,
+    "note": "Too few low-glucose events in CGMacros (participants are mostly not on glucose-lowering drugs) to train or validate P(<70). Shown in the app with a 'not validated' label."
+   }
+  },
+  {
+   "level": "2",
+   "label": "2 pricks/day",
+   "n_patients": 45,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "n_forecasts": 13251,
+   "rmse": {
+    "30": 29.37256937505062,
+    "60": 30.556712866724343,
+    "90": 31.662901153181693,
+    "120": 32.18832667824254
+   },
+   "mard_60": 15.489602601784325,
+   "coverage90": {
+    "30": 0.8935094874977833,
+    "60": 0.898932384341637,
+    "90": 0.8922513836814855,
+    "120": 0.8956093189964157
+   },
+   "width90": {
+    "30": 107.72222045303455,
+    "60": 114.42430186821935,
+    "90": 115.32881485936089,
+    "120": 116.35616599938575
+   },
+   "auroc_high": 0.8144352876499742,
+   "auprc_high": 0.6737127551498279,
+   "brier_high": 0.13832921288164202,
+   "ece_high": 0.03571842241713329,
+   "prevalence_high": 0.2777033663719975,
+   "auroc_low": 0.2990202985385225,
+   "auprc_low": 0.0055300437836546335,
+   "ece_low": 0.00030363003434433016,
+   "prevalence_low": 0.007411376015715689,
+   "abstain_rate": 0.008376726284808693,
+   "rmse60_ci": [
+    30.556712866724343,
+    27.05188133075745,
+    33.95790543308689
+   ],
+   "auroc_high_ci": [
+    0.8144352876499742,
+    0.7269188238794434,
+    0.8750499271575826
+   ],
+   "coverage90_60_ci": [
+    0.898932384341637,
+    0.8511656482382748,
+    0.929245521149292
+   ],
+   "mechanistic_only": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 13251,
+    "n_forecasts": 13251,
+    "rmse": {
+     "30": 31.94414318298768,
+     "60": 33.66444975024231,
+     "90": 35.086947543914896,
+     "120": 36.13357046365548
+    },
+    "mard_60": 16.316101883416284,
+    "auroc_high": 0.7897473008281264,
+    "auprc_high": 0.6392768166611968,
+    "brier_high": 0.16062932206248573,
+    "ece_high": 0.12543560436943776,
+    "prevalence_high": 0.2777033663719975,
+    "auroc_low": 0.49157027534390885,
+    "auprc_low": 0.03469751514922155,
+    "ece_low": 0.020957823615203743,
+    "prevalence_low": 0.007411376015715689,
+    "abstain_rate": 0.008376726284808693
+   },
+   "reconstruction": {
+    "rmse": 31.120937817483703,
+    "mard": 14.792107012151995,
+    "particle_band_coverage90": 0.6498086684888715,
+    "particle_band_width90": 53.76853974379766,
+    "clarke": {
+     "A": 73.01835220616947,
+     "B": 25.972666926981645,
+     "C": 0.092151503319016,
+     "D": 0.9168293635298712,
+     "E": 0.0
+    }
+   },
+   "t2d_only": {
+    "n_patients": 14,
+    "n_people": 14,
+    "n_recordings": 14,
+    "n_forecast_windows": 4052,
+    "n_forecasts": 4052,
+    "rmse": {
+     "30": 36.25696566026564,
+     "60": 37.88166795936053,
+     "90": 40.03652777241043,
+     "120": 41.47271729286959
+    },
+    "mard_60": 18.024455386273385,
+    "coverage90": {
+     "30": 0.914187643020595,
+     "60": 0.9141544645420614,
+     "90": 0.904555940023068,
+     "120": 0.9003476245654692
+    },
+    "width90": {
+     "30": 138.7421405841389,
+     "60": 148.91567983311677,
+     "90": 150.97303415534114,
+     "120": 153.14799943888576
+    },
+    "auroc_high": 0.8272973991181558,
+    "auprc_high": 0.7884737922966332,
+    "brier_high": 0.1700973270170507,
+    "ece_high": 0.041949132677834025,
+    "prevalence_high": 0.5037463976945245,
+    "auroc_low": 0.3876112400851228,
+    "auprc_low": 0.006764141582161183,
+    "ece_low": 0.0002741746603785577,
+    "prevalence_low": 0.0069164265129683,
+    "abstain_rate": 0.012833168805528134
+   },
+   "meal_anchored": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 783,
+    "n_forecasts": 783,
+    "rmse": {
+     "30": 32.16072752413041,
+     "60": 35.752479386256795,
+     "90": 36.13751659201834,
+     "120": 36.143492756641756
+    },
+    "mard_60": 18.224026562089982,
+    "coverage90": {
+     "30": 0.8436268068331143,
+     "60": 0.8134920634920635,
+     "90": 0.7976190476190477,
+     "120": 0.8026666666666666
+    },
+    "width90": {
+     "30": 103.26015262151914,
+     "60": 105.97266488644982,
+     "90": 100.26486160225382,
+     "120": 96.24862861645538
+    },
+    "auroc_high": 0.7645945022795788,
+    "auprc_high": 0.7205313084684659,
+    "brier_high": 0.18064288189292657,
+    "ece_high": 0.053113477992418154,
+    "prevalence_high": 0.3827814569536424,
+    "auroc_low": 0.3614666666666667,
+    "auprc_low": 0.006968558807549666,
+    "ece_low": 0.0015618461065156565,
+    "prevalence_low": 0.006622516556291391,
+    "abstain_rate": 0.024265644955300127
+   },
+   "abstain_vs_not": {
+    "rmse60_abstained": 50.69406765679153,
+    "rmse60_confident": 30.298305354352195
+   },
+   "exploratory_horizons": {
+    "status": "exploratory",
+    "validated_horizon_min": 120,
+    "note": "Beyond 120 min the learned residual and the conformal band are NOT trained or calibrated: the 120-min residual is held and the particle band is widened by the 120-min conformal ratio, exactly as the app draws its 4-hour curve. Later meals are unknown to the forecast. Exploratory only.",
+    "horizons": {
+     "180": {
+      "rmse": 32.80579716246727,
+      "rmse_mechanistic_only": 36.631998406311126,
+      "coverage90": 0.8823157514450867,
+      "width90": 119.17534569340215,
+      "n_forecast_windows": 11072,
+      "n_people": 45,
+      "rmse_ci": [
+       32.80579716246727,
+       28.977395456992785,
+       36.3948047796982
+      ],
+      "status": "exploratory"
+     },
+     "240": {
+      "rmse": 34.43193369653154,
+      "rmse_mechanistic_only": 36.81344223420044,
+      "coverage90": 0.8775825976153636,
+      "width90": 123.20655567165332,
+      "n_forecast_windows": 10987,
+      "n_people": 45,
+      "rmse_ci": [
+       34.43193369653154,
+       30.324448174541413,
+       38.219773620517266
+      ],
+      "status": "exploratory"
+     }
+    }
+   },
+   "low_events": {
+    "positive_windows": 83,
+    "prevalence": 0.007411376015715689,
+    "patients_with_lows": 9,
+    "validated": false,
+    "note": "Too few low-glucose events in CGMacros (participants are mostly not on glucose-lowering drugs) to train or validate P(<70). Shown in the app with a 'not validated' label."
+   }
+  },
+  {
+   "level": "1",
+   "label": "1 prick/day",
+   "n_patients": 45,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "n_forecasts": 13251,
+   "rmse": {
+    "30": 30.357947134813063,
+    "60": 31.045684640963294,
+    "90": 31.948447754441776,
+    "120": 32.42744986064371
+   },
+   "mard_60": 15.574964007446262,
+   "coverage90": {
+    "30": 0.8890760773186736,
+    "60": 0.8964412811387901,
+    "90": 0.8926084627745046,
+    "120": 0.8939068100358423
+   },
+   "width90": {
+    "30": 109.5497552051381,
+    "60": 115.53218561701308,
+    "90": 116.65031184890053,
+    "120": 116.76364490377388
+   },
+   "auroc_high": 0.8102689770833241,
+   "auprc_high": 0.6647531404161225,
+   "brier_high": 0.14042775163070728,
+   "ece_high": 0.035224078944297854,
+   "prevalence_high": 0.2777033663719975,
+   "auroc_low": 0.3049685246925088,
+   "auprc_low": 0.005959318486906843,
+   "ece_low": 0.00010991970155921853,
+   "prevalence_low": 0.007411376015715689,
+   "abstain_rate": 0.00867859029507207,
+   "rmse60_ci": [
+    31.045684640963294,
+    27.18333665751635,
+    34.61144265875398
+   ],
+   "auroc_high_ci": [
+    0.8102689770833241,
+    0.7231931607454046,
+    0.8705640259769205
+   ],
+   "coverage90_60_ci": [
+    0.8964412811387901,
+    0.8450384191348779,
+    0.9275896464431321
+   ],
+   "mechanistic_only": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 13251,
+    "n_forecasts": 13251,
+    "rmse": {
+     "30": 32.99823309384132,
+     "60": 34.42129359889231,
+     "90": 35.67307462936375,
+     "120": 36.62722031801768
+    },
+    "mard_60": 16.52895078683448,
+    "auroc_high": 0.7858921984879628,
+    "auprc_high": 0.6274378996144967,
+    "brier_high": 0.16459482295046185,
+    "ece_high": 0.13054498913593474,
+    "prevalence_high": 0.2777033663719975,
+    "auroc_low": 0.5018420208361333,
+    "auprc_low": 0.031594033795794875,
+    "ece_low": 0.024120606006488677,
+    "prevalence_low": 0.007411376015715689,
+    "abstain_rate": 0.00867859029507207
+   },
+   "reconstruction": {
+    "rmse": 32.85470641634257,
+    "mard": 15.441541045779797,
+    "particle_band_coverage90": 0.6347364310816087,
+    "particle_band_width90": 55.71374446448283,
+    "clarke": {
+     "A": 71.10035142522452,
+     "B": 27.464271768840298,
+     "C": 0.093713393205779,
+     "D": 1.3416634127294027,
+     "E": 0.0
+    }
+   },
+   "t2d_only": {
+    "n_patients": 14,
+    "n_people": 14,
+    "n_recordings": 14,
+    "n_forecast_windows": 4052,
+    "n_forecasts": 4052,
+    "rmse": {
+     "30": 38.38759857725218,
+     "60": 38.96065833337348,
+     "90": 40.67953850884924,
+     "120": 41.96615923449002
+    },
+    "mard_60": 18.269994614955205,
+    "coverage90": {
+     "30": 0.909324942791762,
+     "60": 0.9175997703129486,
+     "90": 0.9071510957324106,
+     "120": 0.8983198146002318
+    },
+    "width90": {
+     "30": 142.93726713876364,
+     "60": 151.97318622951158,
+     "90": 153.956642903135,
+     "120": 154.5677084686947
+    },
+    "auroc_high": 0.8176695051520636,
+    "auprc_high": 0.7784631086083734,
+    "brier_high": 0.17556035510041043,
+    "ece_high": 0.04494824626962853,
+    "prevalence_high": 0.5037463976945245,
+    "auroc_low": 0.3531570419810408,
+    "auprc_low": 0.009745381165842119,
+    "ece_low": 0.0006694414008252755,
+    "prevalence_low": 0.0069164265129683,
+    "abstain_rate": 0.014067127344521224
+   },
+   "meal_anchored": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 783,
+    "n_forecasts": 783,
+    "rmse": {
+     "30": 32.32695985399889,
+     "60": 35.656373282327415,
+     "90": 35.83232085357625,
+     "120": 35.99128256774867
+    },
+    "mard_60": 18.173233476978552,
+    "coverage90": {
+     "30": 0.8396846254927727,
+     "60": 0.8227513227513228,
+     "90": 0.7976190476190477,
+     "120": 0.8093333333333333
+    },
+    "width90": {
+     "30": 102.74571853961888,
+     "60": 106.15430297516787,
+     "90": 101.35680195830481,
+     "120": 96.78288570172093
+    },
+    "auroc_high": 0.7639930498834222,
+    "auprc_high": 0.7192968290227884,
+    "brier_high": 0.17973590547711446,
+    "ece_high": 0.05315996809625696,
+    "prevalence_high": 0.3827814569536424,
+    "auroc_low": 0.3608,
+    "auprc_low": 0.00696473379689567,
+    "ece_low": 0.0015461926574451843,
+    "prevalence_low": 0.006622516556291391,
+    "abstain_rate": 0.022988505747126436
+   },
+   "abstain_vs_not": {
+    "rmse60_abstained": 50.35464536216506,
+    "rmse60_confident": 30.796804399723644
+   },
+   "exploratory_horizons": {
+    "status": "exploratory",
+    "validated_horizon_min": 120,
+    "note": "Beyond 120 min the learned residual and the conformal band are NOT trained or calibrated: the 120-min residual is held and the particle band is widened by the 120-min conformal ratio, exactly as the app draws its 4-hour curve. Later meals are unknown to the forecast. Exploratory only.",
+    "horizons": {
+     "180": {
+      "rmse": 32.97749229083792,
+      "rmse_mechanistic_only": 36.93051017017045,
+      "coverage90": 0.8796062138728323,
+      "width90": 118.74107187138935,
+      "n_forecast_windows": 11072,
+      "n_people": 45,
+      "rmse_ci": [
+       32.97749229083792,
+       29.080424544958568,
+       36.71755423204907
+      ],
+      "status": "exploratory"
+     },
+     "240": {
+      "rmse": 34.63154009593421,
+      "rmse_mechanistic_only": 37.00953385246398,
+      "coverage90": 0.8793119140802766,
+      "width90": 122.22914324259439,
+      "n_forecast_windows": 10987,
+      "n_people": 45,
+      "rmse_ci": [
+       34.63154009593421,
+       30.495469831409512,
+       38.47410665725714
+      ],
+      "status": "exploratory"
+     }
+    }
+   },
+   "low_events": {
+    "positive_windows": 83,
+    "prevalence": 0.007411376015715689,
+    "patients_with_lows": 9,
+    "validated": false,
+    "note": "Too few low-glucose events in CGMacros (participants are mostly not on glucose-lowering drugs) to train or validate P(<70). Shown in the app with a 'not validated' label."
+   }
+  },
+  {
+   "level": "0",
+   "label": "No glucose data",
+   "n_patients": 45,
+   "n_people": 45,
+   "n_recordings": 45,
+   "n_forecast_windows": 13251,
+   "n_forecasts": 13251,
+   "rmse": {
+    "30": 30.46043766859621,
+    "60": 31.10664705156171,
+    "90": 31.992879226572466,
+    "120": 32.481212283192484
+   },
+   "mard_60": 15.727735038931423,
+   "coverage90": {
+    "30": 0.8898740911509133,
+    "60": 0.8958185053380783,
+    "90": 0.8923406534547402,
+    "120": 0.8897849462365591
+   },
+   "width90": {
+    "30": 112.1925055474185,
+    "60": 117.0988382440836,
+    "90": 117.87416334023452,
+    "120": 117.98187990848159
+   },
+   "auroc_high": 0.810702836093158,
+   "auprc_high": 0.6633202221463377,
+   "brier_high": 0.14073073436243194,
+   "ece_high": 0.03346601646584242,
+   "prevalence_high": 0.2777033663719975,
+   "auroc_low": 0.28154521649028647,
+   "auprc_low": 0.0053729483164898185,
+   "ece_low": 0.00011554504147091235,
+   "prevalence_low": 0.007411376015715689,
+   "abstain_rate": 0.01275375443362765,
+   "rmse60_ci": [
+    31.10664705156171,
+    27.182514162771056,
+    34.70045975066831
+   ],
+   "auroc_high_ci": [
+    0.810702836093158,
+    0.7256141281198789,
+    0.8708411971051147
+   ],
+   "coverage90_60_ci": [
+    0.8958185053380783,
+    0.8433370879644604,
+    0.929313713596867
+   ],
+   "mechanistic_only": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 13251,
+    "n_forecasts": 13251,
+    "rmse": {
+     "30": 33.75610003435955,
+     "60": 35.05068228032909,
+     "90": 36.20825483558169,
+     "120": 37.05010981175195
+    },
+    "mard_60": 16.758086589970496,
+    "auroc_high": 0.7838140716681262,
+    "auprc_high": 0.6209439080232716,
+    "brier_high": 0.16567407010546575,
+    "ece_high": 0.13229990772985686,
+    "prevalence_high": 0.2777033663719975,
+    "auroc_low": 0.5030434801458443,
+    "auprc_low": 0.02103206434947378,
+    "ece_low": 0.028807929279399944,
+    "prevalence_low": 0.007411376015715689,
+    "abstain_rate": 0.01275375443362765
+   },
+   "reconstruction": {
+    "rmse": 33.845888108866724,
+    "mard": 15.97208767982493,
+    "particle_band_coverage90": 0.6255993752440453,
+    "particle_band_width90": 58.10591542338362,
+    "clarke": {
+     "A": 69.44631003514252,
+     "B": 29.07926591175322,
+     "C": 0.093713393205779,
+     "D": 1.380710659898477,
+     "E": 0.0
+    }
+   },
+   "t2d_only": {
+    "n_patients": 14,
+    "n_people": 14,
+    "n_recordings": 14,
+    "n_forecast_windows": 4052,
+    "n_forecasts": 4052,
+    "rmse": {
+     "30": 37.94148995457763,
+     "60": 38.86237433796087,
+     "90": 40.73776129282168,
+     "120": 42.13006842585256
+    },
+    "mard_60": 18.570860121045808,
+    "coverage90": {
+     "30": 0.9156178489702517,
+     "60": 0.9164513350559862,
+     "90": 0.907439446366782,
+     "120": 0.9017960602549246
+    },
+    "width90": {
+     "30": 148.41837580121882,
+     "60": 155.68285759264654,
+     "90": 156.77284311552418,
+     "120": 157.1596930288211
+    },
+    "auroc_high": 0.8139562851986807,
+    "auprc_high": 0.774586546764323,
+    "brier_high": 0.17762434144566266,
+    "ece_high": 0.045330773143429745,
+    "prevalence_high": 0.5037463976945245,
+    "auroc_low": 0.3232733604178758,
+    "auprc_low": 0.006191434392015805,
+    "ece_low": 0.0005390443567590565,
+    "prevalence_low": 0.0069164265129683,
+    "abstain_rate": 0.02319842053307009
+   },
+   "meal_anchored": {
+    "n_patients": 45,
+    "n_people": 45,
+    "n_recordings": 45,
+    "n_forecast_windows": 783,
+    "n_forecasts": 783,
+    "rmse": {
+     "30": 32.721341783516905,
+     "60": 35.52702049956039,
+     "90": 35.75770012087245,
+     "120": 36.66406357573396
+    },
+    "mard_60": 18.262710349934743,
+    "coverage90": {
+     "30": 0.8462549277266754,
+     "60": 0.8187830687830688,
+     "90": 0.798941798941799,
+     "120": 0.7813333333333333
+    },
+    "width90": {
+     "30": 105.6825194443973,
+     "60": 106.24927047097157,
+     "90": 100.43729721307025,
+     "120": 95.39491366483473
+    },
+    "auroc_high": 0.7654781175282535,
+    "auprc_high": 0.7225173801117967,
+    "brier_high": 0.1798381324946363,
+    "ece_high": 0.05280425145758189,
+    "prevalence_high": 0.3827814569536424,
+    "auroc_low": 0.3474666666666667,
+    "auprc_low": 0.006799489506522973,
+    "ece_low": 0.0015715569523832712,
+    "prevalence_low": 0.006622516556291391,
+    "abstain_rate": 0.02937420178799489
+   },
+   "abstain_vs_not": {
+    "rmse60_abstained": 50.28768170981706,
+    "rmse60_confident": 30.763031445023202
+   },
+   "exploratory_horizons": {
+    "status": "exploratory",
+    "validated_horizon_min": 120,
+    "note": "Beyond 120 min the learned residual and the conformal band are NOT trained or calibrated: the 120-min residual is held and the particle band is widened by the 120-min conformal ratio, exactly as the app draws its 4-hour curve. Later meals are unknown to the forecast. Exploratory only.",
+    "horizons": {
+     "180": {
+      "rmse": 33.14652209548751,
+      "rmse_mechanistic_only": 37.19989805493008,
+      "coverage90": 0.8783417630057804,
+      "width90": 119.28748676679773,
+      "n_forecast_windows": 11072,
+      "n_people": 45,
+      "rmse_ci": [
+       33.14652209548751,
+       29.129566507257277,
+       37.05293199524344
+      ],
+      "status": "exploratory"
+     },
+     "240": {
+      "rmse": 34.940586155073824,
+      "rmse_mechanistic_only": 37.21968339788034,
+      "coverage90": 0.8772185309911714,
+      "width90": 122.54054297947366,
+      "n_forecast_windows": 10987,
+      "n_people": 45,
+      "rmse_ci": [
+       34.940586155073824,
+       30.49755930114356,
+       38.94576804460906
+      ],
+      "status": "exploratory"
+     }
+    }
+   },
+   "low_events": {
+    "positive_windows": 83,
+    "prevalence": 0.007411376015715689,
+    "patients_with_lows": 9,
+    "validated": false,
+    "note": "Too few low-glucose events in CGMacros (participants are mostly not on glucose-lowering drugs) to train or validate P(<70). Shown in the app with a 'not validated' label."
+   }
+  }
+ ]
+}

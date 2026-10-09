@@ -1,0 +1,42 @@
+# >>> nemotwins
+# NemoTwins - https://nemotwins.koushikdeb.com : static React build + /api -> FastAPI on 127.0.0.1:8150
+# DNS: A record "nemotwins" -> server IP. TLS via Caddy ACME.
+nemotwins.koushikdeb.com {
+	encode zstd gzip
+	log {
+		output file /var/log/caddy/nemotwins.log {
+			roll_size 50MiB
+			roll_keep 5
+			roll_keep_for 2160h
+		}
+		format json
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+		Cross-Origin-Opener-Policy "same-origin"
+		-Server
+	}
+	@immutable path /assets/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+	handle /api/* {
+		request_body {
+			max_size 15MB
+		}
+		reverse_proxy 127.0.0.1:8150 {
+			header_up X-Real-IP {remote_host}
+			transport http {
+				read_timeout 120s
+			}
+		}
+	}
+	handle {
+		root * /home/Debz/Host/nemotwins/web
+		try_files {path} /index.html
+		file_server
+	}
+}
+# <<< nemotwins
